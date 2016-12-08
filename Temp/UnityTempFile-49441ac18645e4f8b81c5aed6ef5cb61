@@ -90,8 +90,11 @@
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_IOS_ON_DEMAND_RESOURCES
 -define:ENABLE_IOS_APP_SLICING
+'Assets/Prefab/EnemyMove.cs'
 'Assets/Scripts/CameraMove.cs'
 'Assets/Scripts/CoupleGenerator.cs'
+'Assets/Scripts/GameManager.cs'
+'Assets/Scripts/PlayerAttack.cs'
 'Assets/Scripts/PlayreMove.cs'
 -r:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll'
