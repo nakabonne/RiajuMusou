@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\MainUIManager.cs" />
      <Compile Include="Assets\Scripts\ManagerRoot.cs" />
      <Compile Include="Assets\Scripts\MySceneManager.cs" />
+     <Compile Include="Assets\Scripts\ParameterManager.cs" />
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\PlayreMove.cs" />
      <Compile Include="Assets\Scripts\ResultUIManager.cs" />
