@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//ゲームが始まらないと処理はされない
+		if (GameManager.Instance.BeforeGameStart ()) return;
 		if (Input.GetMouseButtonDown (0)) {
 			Attack ();
 		}

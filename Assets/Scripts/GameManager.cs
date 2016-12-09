@@ -2,21 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour {
-
-	//倒したエネミーの数
-	public int killedEnemy;
+public class GameManager : SingletonMonoBehaviour<GameManager> {
 
 	//プレイ可能状態ならtrueを返す
 	public bool isPlaying;
 	// Use this for initialization
 	void Start () {
-		killedEnemy = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (BeforePlay()) {
+		if (BeforePlayClick()) {
 			GameStart ();
 		}
 		//これより下はゲーム開始後しか呼ばれない
@@ -28,9 +24,15 @@ public class GameManager : MonoBehaviour {
 		isPlaying = true;
 	}
 
-	//ゲーム開始前に左クリックをしたらtrue
-	bool BeforePlay()
+	//ゲーム開始前に右クリックをしたらtrue
+	bool BeforePlayClick()
 	{
-		return Input.GetMouseButtonDown (0) && !isPlaying;
+		return Input.GetMouseButtonDown (1) && !isPlaying;
 	}
+	//ゲームが始まってなかったらtrueを返す
+	public bool BeforeGameStart()
+	{
+		return !isPlaying;
+	}
+		
 }

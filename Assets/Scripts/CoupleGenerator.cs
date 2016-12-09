@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//現状使ってない
 public class CoupleGenerator : MonoBehaviour {
 	public GameObject couple;
 

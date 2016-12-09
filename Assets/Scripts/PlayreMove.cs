@@ -11,6 +11,8 @@ public class PlayreMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//ゲームが始まるまでは実行されない
+		if (GameManager.Instance.BeforeGameStart()) return;
 		Move ();
 	}
 	//移動する
