@@ -1,14 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SingletonMonoBehaviour.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayreMove.cs" Line="1" Column="2" />
-      <File FileName="Assets/Scripts/CoupleGenerator.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/CameraMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="22" Column="24" />
-      <File FileName="Assets/Scripts/PlayerAttack.cs" Line="21" Column="20" />
-      <File FileName="Assets/Scripts/EnemyMove.cs" Line="21" Column="35" />
-      <File FileName="Assets/Scripts/TimeManager.cs" Line="22" Column="15" />
+      <File FileName="Assets/Scripts/PlayreMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CoupleGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemyMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TimeManager.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/SingletonMonoBehaviour.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/ScoreManager.cs" Line="18" Column="10" />
+      <File FileName="Assets/Scripts/StageGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemyModel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MySceneManager.cs" Line="25" Column="32" />
+      <File FileName="Assets/Scripts/TitleManager.cs" Line="15" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
