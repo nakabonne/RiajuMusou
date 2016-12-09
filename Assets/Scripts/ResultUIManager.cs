@@ -21,4 +21,9 @@ public class ResultUIManager : MonoBehaviour {
 	{
 		score.text = ScoreManager.Instance.killedEnemy.ToString ();
 	}
+	//リトライ
+	public void Retry()
+	{
+		MySceneManager.Instance.GoMainGame ();
+	}
 }

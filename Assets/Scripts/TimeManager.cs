@@ -15,6 +15,8 @@ public class TimeManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//ゲームが始まるまでは実行されない
+		if (GameManager.Instance.BeforeGameStart()) return;
 		CountDown ();
 		if (time <= 0) {
 			GoResult ();

@@ -12,6 +12,9 @@ public class MainUIManager : MonoBehaviour {
 	//スコア------------------------
 	public Text score;
 
+	//経験値
+	public Text experience;
+
 	// Use this for initialization
 	void Start () {
 		timeManager = timeManagerObj.GetComponent<TimeManager> ();
@@ -21,15 +24,21 @@ public class MainUIManager : MonoBehaviour {
 	void Update () {
 		Time ();
 		Score ();
+		Experience ();
 	}
 	//タイムの表示
 	void Time()
 	{
-		time.text = timeManager.time.ToString();
+		time.text = "Time：" + timeManager.time.ToString("f0");
 	}
 	//スコアの表示
 	void Score()
 	{
-		score.text = "スコア：" + ScoreManager.Instance.killedEnemy.ToString ();
+		score.text = "Score：" + ScoreManager.Instance.killedEnemy.ToString ();
+	}
+	//獲得経験値の表示
+	void Experience()
+	{
+		experience.text = "Experinence：" + ExperienceManager.Instance.experience.ToString();
 	}
 }

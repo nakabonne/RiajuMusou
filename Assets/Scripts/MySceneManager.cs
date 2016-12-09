@@ -15,13 +15,23 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 		
 	}
 
-	public void GoResult()
+
+	public void GOTitle()
 	{
-		SceneManager.LoadScene ("Result");
+		SceneManager.LoadScene ("Title");
 	}
 
 	public void GoMainGame()
 	{
+		//スコアの初期化
+		ScoreManager.Instance.killedEnemy = 0;
 		SceneManager.LoadScene ("Main");
+	}
+
+	public void GoResult()
+	{
+		//経験値の保存
+		ExperienceManager.Instance.Save ();
+		SceneManager.LoadScene ("Result");
 	}
 }

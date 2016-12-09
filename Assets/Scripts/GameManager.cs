@@ -8,6 +8,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 	public bool isPlaying;
 	// Use this for initialization
 	void Start () {
+		isPlaying = false;
 	}
 	
 	// Update is called once per frame

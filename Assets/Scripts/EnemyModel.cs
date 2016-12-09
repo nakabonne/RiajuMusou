@@ -13,8 +13,12 @@ public class EnemyModel : MonoBehaviour {
 
 	void Update()
 	{
+		//デバッグ用
+		if (Input.GetKeyDown (KeyCode.S)) {
+			Damage ();
+		}
 		if (hp <= 0) {
-			AddScore ();
+			Deth ();
 		}
 	}
 	//レベルによってHPを決める
@@ -31,9 +35,28 @@ public class EnemyModel : MonoBehaviour {
 		return this.gameObject.tag == "Level1";
 	}
 
-	//死んだ時にスコアを追加する
+	//ダメージを受けた時の処理
+	public void Damage()
+	{
+		hp--;
+	}
+
+	//死んだ時の処理
+	void Deth()
+	{
+		AddScore ();
+		AddExperience ();
+	
+		Destroy (gameObject);
+	}
+	//スコアを追加する
 	void AddScore()
 	{
-		ScoreManager.Instance.AddScore ();
+		ScoreManager.Instance.Add ();
+	}
+	//経験値を追加する
+	void AddExperience()
+	{
+		ExperienceManager.Instance.Add ();
 	}
 }
