@@ -32,9 +32,21 @@ public class ParameterManager : SingletonMonoBehaviour<ParameterManager> {
 		speed = PlayerPrefs.GetInt ("SPEED");
 	}
 	//保存
-	void Save()
+	public void Save()
 	{
 		PlayerPrefs.SetInt ("SORDLENGTH",sordLength);
 		PlayerPrefs.SetInt ("SPEED",speed);
 	}
+//	//剣の長さレベルを上げる
+//	public void UpSordLength()
+//	{
+//		sordLength++;
+//		Save ();
+//	}
+//	//スピードを上げる
+//	public void UpSpeed()
+//	{
+//		speed++;
+//		Save ();
+//	}
 }

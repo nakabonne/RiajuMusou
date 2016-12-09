@@ -29,7 +29,6 @@ public class StageGenerator : MonoBehaviour {
 	//ステージの生成
 	void Generate(int level)
 	{
-		Debug.Log("呼ばれてるよ");
 
 		switch (level) {
 		case 2:
@@ -49,11 +48,11 @@ public class StageGenerator : MonoBehaviour {
 	//レベル1をクリアしたらtrue
 	bool IsLevelOneClear()
 	{
-		return ScoreManager.Instance.killedEnemy >= 10 && flag == true;
+		return ScoreManager.Instance.killedEnemy >= 20 && flag == true;
 	}
 	//レベル2をクリアしたらtrue
 	bool IsLevelTwoClear()
 	{
-		return ScoreManager.Instance.killedEnemy >= 20 && flag == false;
+		return ScoreManager.Instance.killedEnemy >= 40 && flag == false;
 	}
 }
