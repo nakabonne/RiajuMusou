@@ -21,6 +21,22 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 		SceneManager.LoadScene ("Title");
 	}
 
+	public void GoPrepare()
+	{
+		SceneManager.LoadScene ("Prepare");
+	}
+
+	public void GoPartnerChange()
+	{
+		SceneManager.LoadScene ("PartnerChange");
+	}
+
+	public void GoItemChange()
+	{
+		SceneManager.LoadScene ("ItemChange");
+	}
+
+
 	public void GoMainGame()
 	{
 		//スコアの初期化
