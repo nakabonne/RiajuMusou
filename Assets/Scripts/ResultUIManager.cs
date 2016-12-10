@@ -8,21 +8,31 @@ public class ResultUIManager : MonoBehaviour {
 	public Text score;
 
 	public Text experience;
+
+	public Text reward;
 	//動画広告を見せるボタン
 	public GameObject movieShowButton;
+
 	//剣のレベルを表示
 	public Text sordLengthLevel;
 	//スピードのレベルを表示
 	public Text speedLevel;
 
-	//乱数
+	//--------------------------------
+
+    //乱数
 	int movieRandomShowTiming;
+
 	// Use this for initialization
 	void Start () {
 		//動画広告ボタンを非表示に
 		movieShowButton.SetActive (false);
+		//報酬額を非表示
+		reward.enabled = false;
 		//動画を表示するか決定
 		movieRandomShowTiming = AdvertiseManger.Instance.MovieShowTiming ();
+
+		ExperienceManager.Instance.isReward = false;
 	}
 	
 	// Update is called once per frame
@@ -31,6 +41,10 @@ public class ResultUIManager : MonoBehaviour {
 		Experience ();
 		ShowMovie ();
 		Level ();
+		//報酬をもらったら
+		if (ExperienceManager.Instance.isReward) {
+			ShowReward ();
+		}
 
 	}
 	//スコアを表示
@@ -62,5 +76,18 @@ public class ResultUIManager : MonoBehaviour {
 		if (movieRandomShowTiming == 1) {
 			movieShowButton.SetActive (true);
 		}
+	}
+	//報酬額を表示
+	void ShowReward()
+	{
+		reward.enabled = true;
+		reward.text = "+ " + ExperienceManager.Instance.reward;
+		Invoke ("DeleteRewardText", 1.0f);
+	}
+	//報酬額テキストを消す
+	void DeleteRewardText()
+	{
+		ExperienceManager.Instance.isReward = false;
+		reward.enabled = false;
 	}
 }

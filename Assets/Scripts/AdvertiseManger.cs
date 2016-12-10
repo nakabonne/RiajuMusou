@@ -9,6 +9,6 @@ public class AdvertiseManger : SingletonMonoBehaviour<AdvertiseManger> {
 	//動画広告をランダムに表示するための乱数
 	public int MovieShowTiming()
 	{
-		return Random.Range (0, 2);
+		return Random.Range (1, 1);
 	}
 }
