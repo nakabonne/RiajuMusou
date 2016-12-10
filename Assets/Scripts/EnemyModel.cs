@@ -34,6 +34,14 @@ public class EnemyModel : MonoBehaviour {
 	{
 		return this.gameObject.tag == "Level1";
 	}
+	//衝突判定
+	void OnTriggerEnter(Collider other)
+	{
+		//剣に当たったら
+		if (other.gameObject.tag == "Sord") {
+			Damage ();
+		}
+	}
 
 	//ダメージを受けた時の処理
 	public void Damage()
