@@ -5,6 +5,8 @@ using UnityEngine;
 public class ExperienceManager : SingletonMonoBehaviour<ExperienceManager> {
 
 	public int experience = 0;
+
+
 	// Use this for initialization
 	void Start () {
 		Initialize ();
@@ -33,5 +35,12 @@ public class ExperienceManager : SingletonMonoBehaviour<ExperienceManager> {
 	public void Add()
 	{
 		experience += 100;
+	}
+
+	//報酬を経験値に加算する
+	public void GetReward()
+	{
+		//今回の報酬
+		int reward;
 	}
 }
