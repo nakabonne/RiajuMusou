@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\MySceneManager.cs" />
      <Compile Include="Assets\Scripts\ParameterManager.cs" />
      <Compile Include="Assets\Scripts\PartnerChange.cs" />
+     <Compile Include="Assets\Scripts\PartnerGenerator.cs" />
      <Compile Include="Assets\Scripts\PartnerManager.cs" />
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\PlayreMove.cs" />

@@ -24,4 +24,9 @@ public class PrepareManager : MonoBehaviour {
 	{
 		MySceneManager.Instance.GoItemChange ();
 	}
+
+	public void GoMain()
+	{
+		MySceneManager.Instance.GoMainGame ();
+	}
 }

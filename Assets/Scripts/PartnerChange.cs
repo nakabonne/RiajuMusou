@@ -25,8 +25,16 @@ public class PartnerChange : MonoBehaviour {
 	//パートナーのチェンジを確定
 	public void Change()
 	{
-		PartnerManager.Instance.Change (choosingPartnerName);
+		//パートナーを選択している場合はPartnerManagerのパートナー情報を変更する
+		if (IsChoosing ()) {
+			PartnerManager.Instance.Change (choosingPartnerName);
+		}
 		//Prepareシーンにリダイレクト
 		MySceneManager.Instance.GoPrepare ();
+	}
+	//パートナーを選択している場合のみtrueを返す
+	bool IsChoosing()
+	{
+		return choosingPartnerName != null;
 	}
 }

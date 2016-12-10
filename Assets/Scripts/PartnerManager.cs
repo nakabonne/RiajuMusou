@@ -36,6 +36,8 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 	//パートナー変更
 	public void Change(string name)
 	{
+		//何も選択しなかったらパートナーは変更しない
+		if (name == "") return;
 		currentPartner = (GameObject)Resources.Load ("PrefabPartners/" + name);
 		//保存
 		PlayerPrefs.SetString ("PARTNER", name);
@@ -46,4 +48,6 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 	{
 		return currentParnerName != "";
 	}
+
+
 }
