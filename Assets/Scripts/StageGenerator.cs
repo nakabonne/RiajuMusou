@@ -8,22 +8,22 @@ public class StageGenerator : MonoBehaviour {
 	public GameObject level2;
 
 	public GameObject level3;
-
-	bool flag = true; 
+	//次のレベル
+	int nextLevel;
 	// Use this for initialization
 	void Start () {
-		
+		nextLevel = 1;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (IsLevelOneClear ()) {
 			Generate (2);
-			flag = false;
+			nextLevel = 2;
 		}
 		if (IsLevelTwoClear ()) {
 			Generate (3);
-			flag = true;
+			nextLevel = 3;
 		}
 	}
 	//ステージの生成
@@ -48,11 +48,11 @@ public class StageGenerator : MonoBehaviour {
 	//レベル1をクリアしたらtrue
 	bool IsLevelOneClear()
 	{
-		return ScoreManager.Instance.killedEnemy >= 20 && flag == true;
+		return ScoreManager.Instance.killedEnemy >= 20 && nextLevel == 1;
 	}
 	//レベル2をクリアしたらtrue
 	bool IsLevelTwoClear()
 	{
-		return ScoreManager.Instance.killedEnemy >= 40 && flag == false;
+		return ScoreManager.Instance.killedEnemy >= 40 && nextLevel == 2;
 	}
 }

@@ -24,8 +24,12 @@ public class EnemyModel : MonoBehaviour {
 	//レベルによってHPを決める
 	void DecideHP()
 	{
-		if (LevelisOne())
+		if (LevelisOne ()) {
+			hp = 1;
+		}
+		if (LevelisTwo ()) {
 			hp = 2;
+		}
 	}
 
 
@@ -33,6 +37,10 @@ public class EnemyModel : MonoBehaviour {
 	bool LevelisOne()
 	{
 		return this.gameObject.tag == "Level1";
+	}
+	bool LevelisTwo()
+	{
+		return this.gameObject.tag == "Level2";
 	}
 	//衝突判定
 	void OnTriggerEnter(Collider other)
