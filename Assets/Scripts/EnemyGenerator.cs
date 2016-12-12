@@ -23,7 +23,7 @@ public class EnemyGenerator : MonoBehaviour {
 			Instantiate(enemy,GeneratePos(),Quaternion.identity);
 		}
 		StageChange ();
-
+		BossGenerate ();
 	}
 	Vector3 GeneratePos()
 	{
@@ -52,13 +52,14 @@ public class EnemyGenerator : MonoBehaviour {
 	void StageChange()
 	{
 		StageManager.nowLelel++;
-		GameObject gateObj = GameObject.FindGameObjectWithTag ("Gate");
-		Gate gate = gateObj.GetComponent<Gate> ();
+//		GameObject gateObj = GameObject.FindGameObjectWithTag ("Gate");
+//		Gate gate = gateObj.GetComponent<Gate> ();
 		BossEnemyManager.deathCount = 0;
 		if (StageManager.nowLelel <= 1) return;
 		//ゲートを開ける
-		gate.Open ();
-		BossGenerate ();
+		//gate.Open ();
+
+		//BossGenerate ();
 	}
 //	//生成ポジション
 //	Vector3 GeneratePos()
@@ -73,14 +74,19 @@ public class EnemyGenerator : MonoBehaviour {
 //
 
 	public GameObject boss;
-
 	GameObject gate;
 
+
+//	//ゲートの生成
+//	void GateGenerate()
+//	{
+//		Instantiate (gate, gameObject.transform.position + new Vector3 (0, 0, 230),Quaternion.identity);
+//		BossGenerate ();
+//	}
 	//	//ボスの生成
 	public void BossGenerate()
 	{
-		gate = GameObject.FindGameObjectWithTag ("Gate");
-		Instantiate (boss, gate.transform.position + new Vector3 (0, 0, -10), Quaternion.identity);
+		Instantiate (boss, GeneratePos(),Quaternion.identity);
 	}
 
 

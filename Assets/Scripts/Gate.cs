@@ -17,5 +17,7 @@ public class Gate : MonoBehaviour {
 	public void Open()
 	{
 		animator.SetTrigger ("isOpen");
+		Destroy (gameObject, 2.0f);
 	}
+
 }

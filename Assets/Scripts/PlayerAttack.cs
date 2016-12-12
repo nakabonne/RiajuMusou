@@ -13,12 +13,10 @@ public class PlayerAttack : MonoBehaviour {
 	void Update () {
 		//ゲームが始まらないと処理はされない
 		if (GameManager.Instance.BeforeGameStart ()) return;
-		if (Input.GetMouseButtonDown (0)) {
-			Attack ();
-		}
+
 	}
 	//攻撃
-	void Attack()
+	public void Attack()
 	{
 		Debug.Log ("攻撃");
 	}

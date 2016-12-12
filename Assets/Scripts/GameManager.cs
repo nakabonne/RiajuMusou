@@ -25,10 +25,10 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 		isPlaying = true;
 	}
 
-	//ゲーム開始前に右クリックをしたらtrue
+	//ゲーム開始前に左クリックをしたらtrue
 	bool BeforePlayClick()
 	{
-		return Input.GetMouseButtonDown (1) && !isPlaying;
+		return Input.GetMouseButtonDown (0) && !isPlaying;
 	}
 	//ゲームが始まってなかったらtrueを返す
 	public bool BeforeGameStart()
