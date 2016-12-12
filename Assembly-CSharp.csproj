@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AdvertiseManger.cs" />
+     <Compile Include="Assets\Scripts\BossEnemy.cs" />
+     <Compile Include="Assets\Scripts\BossEnemyManager.cs" />
      <Compile Include="Assets\Scripts\BuyStatus.cs" />
      <Compile Include="Assets\Scripts\CameraMove.cs" />
      <Compile Include="Assets\Scripts\EnemyGenerator.cs" />
@@ -70,6 +72,7 @@
      <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\SingletonMonoBehaviour.cs" />
      <Compile Include="Assets\Scripts\StageGenerator.cs" />
+     <Compile Include="Assets\Scripts\StageManager.cs" />
      <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\TitleManager.cs" />
      <Compile Include="Assets\Scripts\UnityAdsExample.cs" />

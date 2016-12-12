@@ -15,6 +15,9 @@ public class MainUIManager : MonoBehaviour {
 	//経験値
 	public Text experience;
 
+	//ステージレベル
+	public Text stageLevel;
+
 	// Use this for initialization
 	void Start () {
 		timeManager = timeManagerObj.GetComponent<TimeManager> ();
@@ -25,6 +28,7 @@ public class MainUIManager : MonoBehaviour {
 		Time ();
 		Score ();
 		Experience ();
+		StageLevel ();
 	}
 	//タイムの表示
 	void Time()
@@ -40,5 +44,10 @@ public class MainUIManager : MonoBehaviour {
 	void Experience()
 	{
 		experience.text = "Experinence：" + ExperienceManager.Instance.experience.ToString();
+	}
+
+	void StageLevel()
+	{
+		stageLevel.text = "Stage：" + StageManager.nowLelel.ToString ("f0");
 	}
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyModel : MonoBehaviour {
 
-	public int hp;
+	public float hp;
 
 	// Use this for initialization
 	void Start () {
@@ -24,24 +24,11 @@ public class EnemyModel : MonoBehaviour {
 	//レベルによってHPを決める
 	void DecideHP()
 	{
-		if (LevelisOne ()) {
-			hp = 1;
-		}
-		if (LevelisTwo ()) {
-			hp = 2;
-		}
+		hp = StageManager.nowLelel;
 	}
 
 
-	//このインスタンスがレベル1ならtrueを返す
-	bool LevelisOne()
-	{
-		return this.gameObject.tag == "Level1";
-	}
-	bool LevelisTwo()
-	{
-		return this.gameObject.tag == "Level2";
-	}
+
 	//衝突判定
 	void OnTriggerEnter(Collider other)
 	{
