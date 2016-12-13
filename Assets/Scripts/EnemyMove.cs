@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour {
 
-	float speed = 0.05f;
+	float speed = 0.2f;
 
 	// Use this for initialization
 	void Start () {
