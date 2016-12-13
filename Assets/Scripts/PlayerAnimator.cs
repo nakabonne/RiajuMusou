@@ -26,4 +26,9 @@ public class PlayerAnimator : MonoBehaviour {
 		animator.SetBool ("isRun", false);
 		Debug.Log ("止まる");
 	}
+
+	public void Attack()
+	{
+		animator.SetTrigger ("Attack");
+	}
 }
