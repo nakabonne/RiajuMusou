@@ -46,6 +46,59 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Events\NativeAdViewEvent.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Events\NativeAdViewFailedToLoadEvent.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandler.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandler2D.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandler3D.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandlerGO.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandlerUI.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ImpressionHandler.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ImpressionHandlerGO.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ImpressionHandlerUI.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\INativeAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\INativeAdClient.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NativeAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NativeAdClient.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NativeAdClientFactory.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NendAdNative.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NendAdNativeImage.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NendAdNativeText.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NendAdNativeView.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Utils\NendAdLogger.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Utils\SimpleTimer.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Utils\TextureLoader.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Utils\UIRenderer.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\NendAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\NendAdBanner.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\NendAdIcon.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\NendAdInterstitial.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\Gravity.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendAdErrorEventArgs.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendAdInterstitialEnumerations.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendAdLogger.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendAdMainThreadWorker.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendErrorCode.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendUtils.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\Orientation.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdDefaultLayoutBuilder.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdDefaultLayoutParams.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdIconLayoutBuilder.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdIconLayoutParams.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdLayoutBuilder.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidBannerInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidIconInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidInterstitialInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidNativeAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidNativeAdClient.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\NendAdBannerInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\NendAdIconInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\NendAdInterstitialInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\NendAdNativeInterfaceFactory.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSBannerInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSInterstitialInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSNativeAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSNativeAdClient.cs" />
      <Compile Include="Assets\Scripts\AdvertiseManger.cs" />
      <Compile Include="Assets\Scripts\BossEnemy.cs" />
      <Compile Include="Assets\Scripts\BossEnemyManager.cs" />
@@ -82,6 +135,7 @@
      <Compile Include="Assets\Scripts\UnityAdsExample.cs" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\NendAd\Plugins\iOS\NADView_readme.txt" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>

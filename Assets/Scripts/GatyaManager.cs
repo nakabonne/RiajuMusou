@@ -24,6 +24,7 @@ public class GatyaManager : MonoBehaviour {
 	{
 		//経験値を減らす
 		ExperienceManager.Instance.experience -= 1000;
+		ExperienceManager.Instance.Save ();
 		//ランダムに選出されたパートナーを生成
 		Instantiate (PartnerManager.Instance.RandomPartner (randomNum),new Vector3 (0,0,0),Quaternion.identity);
 		//パートナーを使用可にする
