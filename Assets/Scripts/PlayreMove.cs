@@ -12,13 +12,16 @@ public class PlayreMove : MonoBehaviour {
 	//元となる位置
 	Vector3 prev;
 
+	PlayerAnimator playerAnimator;
+
 	// Use this for initialization
 	void Start () {
 		//初期位置を保存
 		prev = transform.position;
 		//スピードを決定
 		speed = 1.0f + ParameterManager.Instance.speed * 0.1f;
-
+		//アニメータークラスを参照
+		playerAnimator = GetComponent<PlayerAnimator> ();
 	}
 	
 	// Update is called once per frame
@@ -55,12 +58,20 @@ public class PlayreMove : MonoBehaviour {
 			float z = CrossPlatformInputManager.GetAxisRaw("Vertical") * 0.2f * speed;
 			 
 			// 移動する向きを求める
-			Vector3 direction = new Vector3 (x,0,z);
+			direction = new Vector3 (x,0,z);
 
 			transform.position += direction;
+			//少しでも動いたら
+			if (x > 0 || z > 0) {
+				playerAnimator.Run ();
+			}
+			//停止していたら
+			if(x == 0 && z == 0){
+				playerAnimator.Stop ();
+			}
 		}
 	}
-
+	public Vector3 direction;
 	//向きを決める
 	void Direction()
 	{
