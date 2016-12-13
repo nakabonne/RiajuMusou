@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\SaveData.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\SingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Sord.cs" />
      <Compile Include="Assets\Scripts\StageGenerator.cs" />
      <Compile Include="Assets\Scripts\StageManager.cs" />
      <Compile Include="Assets\Scripts\TimeManager.cs" />

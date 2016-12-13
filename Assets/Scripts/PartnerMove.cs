@@ -12,7 +12,7 @@ public class PartnerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (GameManager.Instance.BeforeGameStart ()) return;
 		Serch ();
 		Move ();
 	}

@@ -12,6 +12,6 @@ public class StageManager : MonoBehaviour {
 	}
 	void Update()
 	{
-		Debug.Log (nowLelel);
+		//Debug.Log (nowLelel);
 	}
 }
