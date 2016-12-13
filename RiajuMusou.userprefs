@@ -1,22 +1,24 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayreMove.cs">
     <Files>
-      <File FileName="Assets/Scripts/ParameterManager.cs" Line="35" Column="8" />
-      <File FileName="Assets/Scripts/ItemManager.cs" Line="5" Column="62" />
-      <File FileName="Assets/Scripts/MySceneManager.cs" Line="36" Column="38" />
-      <File FileName="Assets/Scripts/TitleManager.cs" Line="15" Column="37" />
-      <File FileName="Assets/Scripts/PrepareManager.cs" Line="30" Column="41" />
-      <File FileName="Assets/Scripts/PartnerChange.cs" Line="38" Column="37" />
-      <File FileName="Assets/Scripts/PartnerManager.cs" Line="44" Column="1" />
-      <File FileName="Assets/Scripts/PartnerGenerator.cs" Line="20" Column="3" />
-      <File FileName="Assets/Scripts/AdvertiseManger.cs" Line="12" Column="25" />
-      <File FileName="Assets/Scripts/ExperienceManager.cs" Line="53" Column="11" />
-      <File FileName="Assets/Scripts/ResultUIManager.cs" Line="91" Column="26" />
-      <File FileName="Assets/Scripts/BuyStatus.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UnityAdsExample.cs" Line="22" Column="18" />
-      <File FileName="Assets/Scripts/PlayerAttack.cs" Line="23" Column="20" />
-      <File FileName="Assets/Scripts/EnemyModel.cs" Line="40" Column="12" />
+      <File FileName="Assets/Scripts/CameraMove.cs" Line="16" Column="75" />
+      <File FileName="Assets/Scripts/ScoreManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StageGenerator.cs" Line="58" Column="3" />
+      <File FileName="Assets/Scripts/Gate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemyGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TimeManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BossEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StageManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MainUIManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BossEnemyManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TitleManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PartnerMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemyModel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PartnerGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayreMove.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

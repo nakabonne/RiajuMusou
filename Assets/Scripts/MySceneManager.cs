@@ -50,4 +50,9 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 		ExperienceManager.Instance.Save ();
 		SceneManager.LoadScene ("Result");
 	}
+
+	public void GoGatya()
+	{
+		SceneManager.LoadScene ("Gatya");
+	}
 }

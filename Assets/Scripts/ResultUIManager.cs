@@ -68,7 +68,13 @@ public class ResultUIManager : MonoBehaviour {
 	//リトライ
 	public void Retry()
 	{
-		MySceneManager.Instance.GoMainGame ();
+		MySceneManager.Instance.GoPrepare ();
+	}
+
+	//ガチャ
+	public void Gatya()
+	{
+		MySceneManager.Instance.GoGatya ();
 	}
 	//動画広告ボタンをランダムに生成
 	void ShowMovie()

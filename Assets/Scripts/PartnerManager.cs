@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 
+	public bool hiroshi = false;
+	public bool satoru = false;
+
 	//現在のパートナー
 	public GameObject currentPartner;
 	//現在のパートナーの名前
@@ -13,6 +16,7 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 	void Start () {
 		Initialize ();
 		Get ();
+		PartnerCheck ();
 	}
 	//キーを初期化
 	void Initialize()
@@ -32,6 +36,12 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 			Change (currentParnerName);
 		}
 	}
+	//どのパートナーが使用可能かチェック
+	void PartnerCheck()
+	{
+		hiroshi = SaveData.GetBool ("hiroshi",false);
+		satoru = SaveData.GetBool ("satoru",false);
+	}
 
 	//パートナー変更
 	public void Change(string name)
@@ -49,5 +59,33 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 		return currentParnerName != "";
 	}
 
+	//引数の数に対応するパートナーを返す
+	public GameObject RandomPartner(int randomNum)
+	{
+		GameObject partner = null;
+		switch (randomNum) {
+		case 1:
+			partner = (GameObject)Resources.Load ("PrefabPartners/" + "Hiroshi");
+			break;
+		case 2:
+			partner = (GameObject)Resources.Load ("PrefabPartners/" + "Satoru");
+			break;
+		}
+		return partner;
+	}
+	//パートナーを有効にする
+	public void EffectivePartner(int id)
+	{
+		switch (id) {
+		case 1:
+			hiroshi = true;
+			SaveData.SetBool ("hiroshi", true);
+			break;
+		case 2:
+			satoru = true;
+			SaveData.SetBool ("satoru", true);
+			break;
+		}
+	}
 
 }

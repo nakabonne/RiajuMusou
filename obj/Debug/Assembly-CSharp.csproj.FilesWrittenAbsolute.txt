@@ -19,3 +19,6 @@
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/UnityEngine.Advertisements.dll
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb

@@ -5,9 +5,22 @@ using UnityEngine;
 public class PartnerChange : MonoBehaviour {
 
 	string choosingPartnerName;
+
+	public GameObject hiroshiButtion;
+	public GameObject satoruButton;
 	// Use this for initialization
 	void Start () {
-		
+		DisplayPartner ();
+	}
+	//どのパートナーボタンを表示するか決定
+	void DisplayPartner()
+	{
+		if (!PartnerManager.Instance.hiroshi) {
+			hiroshiButtion.SetActive (false);
+		}
+		if (!PartnerManager.Instance.satoru) {
+			satoruButton.SetActive (false);
+		}
 	}
 	
 	// Update is called once per frame

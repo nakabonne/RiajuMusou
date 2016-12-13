@@ -32,12 +32,14 @@ public class BossEnemy : MonoBehaviour {
 	void Deth()
 	{
 		GameObject enemyGeneratorObj = GameObject.Find ("EnemyGenerator");
-		EnemyGenerator enemyGerator = enemyGeneratorObj.GetComponent<EnemyGenerator> ();
+		//EnemyGenerator enemyGerator = enemyGeneratorObj.GetComponent<EnemyGenerator> ();
 
 		BossEnemyManager.deathCount++;
-		enemyGerator.Generate ();
-		AddScore ();
-		AddExperience ();
+		//enemyGerator.Generate ();
+		for (int i = 0; i < 5; i++) {
+			AddScore ();
+			AddExperience ();
+		}
 		Destroy (gameObject);
 	}
 

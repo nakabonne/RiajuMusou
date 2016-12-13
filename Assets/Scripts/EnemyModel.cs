@@ -13,10 +13,6 @@ public class EnemyModel : MonoBehaviour {
 
 	void Update()
 	{
-		//デバッグ用
-		if (Input.GetKeyDown (KeyCode.S)) {
-			Damage ();
-		}
 		if (hp <= 0) {
 			Deth ();
 		}
