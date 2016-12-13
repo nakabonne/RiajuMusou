@@ -20,9 +20,9 @@ public class PartnerGenerator : MonoBehaviour {
 		//カウントが0のパートナーを選択していたら強制的にたけおにする
 		if (PartnerManager.Instance.currentPartner.name == "Hiroshi" && PartnerManager.Instance.hiroshihCount <= 0) {
 			PartnerManager.Instance.currentPartner = (GameObject)Resources.Load ("PrefabPartners/Takeo");
-			Instantiate (PartnerManager.Instance.currentPartner, new Vector3 (1, 0, 1), Quaternion.identity);
+			Instantiate (PartnerManager.Instance.currentPartner, new Vector3 (4, 0, 1), Quaternion.identity);
 		} else {
-			Instantiate (PartnerManager.Instance.currentPartner, new Vector3 (1, 0, 1), Quaternion.identity);
+			Instantiate (PartnerManager.Instance.currentPartner, new Vector3 (4, 0, 1), Quaternion.identity);
 		}
 	}
 	//カウントを減らす
