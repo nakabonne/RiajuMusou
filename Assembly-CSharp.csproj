@@ -46,6 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ModernPeople\Modern People\Demo\Scripts\Anim.cs" />
+     <Compile Include="Assets\ModernPeople\Modern People\Demo\Scripts\Presentation.cs" />
      <Compile Include="Assets\NendAd\Scripts\AD\Native\Events\NativeAdViewEvent.cs" />
      <Compile Include="Assets\NendAd\Scripts\AD\Native\Events\NativeAdViewFailedToLoadEvent.cs" />
      <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandler.cs" />
@@ -153,6 +155,9 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
