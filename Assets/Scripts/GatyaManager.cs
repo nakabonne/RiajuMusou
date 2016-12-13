@@ -8,19 +8,19 @@ public class GatyaManager : MonoBehaviour {
 
 	public GameObject returnButon;
 
+	public GameObject gatyaButton;
+
 	// Use this for initialization
 	void Start () {
-		randomNum = Random.Range (1, 2);
+		randomNum = Random.Range (1, 3);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) {
-			GatyaStart ();
-		}
+		
 	}
 	//ガチャを開始
-	void GatyaStart()
+	public void GatyaStart()
 	{
 		//経験値を減らす
 		ExperienceManager.Instance.experience -= 1000;
@@ -30,6 +30,8 @@ public class GatyaManager : MonoBehaviour {
 		PartnerManager.Instance.EffectivePartner (randomNum);
 		//戻るボタンを表示する
 		returnButon.SetActive(true);
+		//ガチャボタンを非表示にする
+		gatyaButton.SetActive(false);
 	}
 
 	public void Return()

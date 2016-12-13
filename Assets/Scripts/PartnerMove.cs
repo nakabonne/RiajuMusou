@@ -1,17 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PartnerMove : MonoBehaviour {
 
 	GameObject targetObj;
+
+	//現在のシーン名
+	string sceneName;
 	// Use this for initialization
 	void Start () {
 		targetObj = serchTag (gameObject, "Enemy");
+		//現在のシーン名を取得
+		sceneName = SceneManager.GetActiveScene ().name;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (sceneName == "Gatya") return;
 		if (GameManager.Instance.BeforeGameStart ()) return;
 		Serch ();
 		Move ();

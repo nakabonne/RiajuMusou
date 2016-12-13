@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 
-	public bool hiroshi = false;
-	public bool satoru = false;
+	//public bool hiroshi = false;
+	//public bool satoru = false;
+	//それぞれを使用できる数
+	public int hiroshihCount;
+	public int satoruCount;
 
 	//現在のパートナー
 	public GameObject currentPartner;
 	//現在のパートナーの名前
-	string currentParnerName;
+	string currentParnerName = "Takeo";
 
 	// Use this for initialization
 	void Start () {
@@ -39,8 +42,8 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 	//どのパートナーが使用可能かチェック
 	void PartnerCheck()
 	{
-		hiroshi = SaveData.GetBool ("hiroshi",false);
-		satoru = SaveData.GetBool ("satoru",false);
+		hiroshihCount = PlayerPrefs.GetInt ("HIROSHI");
+		satoruCount = PlayerPrefs.GetInt ("SATORU");
 	}
 
 	//パートナー変更
@@ -73,19 +76,29 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 		}
 		return partner;
 	}
-	//パートナーを有効にする
+	//パートナーの使用回数を表示
 	public void EffectivePartner(int id)
 	{
 		switch (id) {
 		case 1:
-			hiroshi = true;
-			SaveData.SetBool ("hiroshi", true);
+			Debug.Log("プラス");
+			hiroshihCount += 3;
+			SaveCount ();
+
 			break;
 		case 2:
-			satoru = true;
-			SaveData.SetBool ("satoru", true);
+			Debug.Log("プラス");
+			satoruCount += 3;
+
+			SaveCount ();
 			break;
 		}
+	}
+	//カウントをセーブ
+	public void SaveCount()
+	{
+		PlayerPrefs.SetInt ("HIROSHI", hiroshihCount);
+		PlayerPrefs.SetInt ("SATORU", satoruCount);
 	}
 
 }

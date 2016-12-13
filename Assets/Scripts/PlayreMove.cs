@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
+
 public class PlayreMove : MonoBehaviour {
 	//デバッグかどうか
 	public bool isDebug;
@@ -10,17 +11,19 @@ public class PlayreMove : MonoBehaviour {
 	float speed;
 	//元となる位置
 	Vector3 prev;
+
 	// Use this for initialization
 	void Start () {
 		//初期位置を保存
 		prev = transform.position;
 		//スピードを決定
-		speed = ParameterManager.Instance.speed * 0.01f;
+		speed = 1.0f + ParameterManager.Instance.speed * 0.1f;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//ゲームが始まるまでは実行されない
+		//ゲームが始まるかガチャシーンだったら何もしない
 		if (GameManager.Instance.BeforeGameStart()) return;
 		MoveInput ();
 		Direction ();
@@ -46,10 +49,10 @@ public class PlayreMove : MonoBehaviour {
 		//本番
 		if (!isDebug) {
 			// 右・左
-			float x = CrossPlatformInputManager.GetAxisRaw("Horizontal") * 0.2f + speed;
+			float x = CrossPlatformInputManager.GetAxisRaw("Horizontal") * 0.2f * speed;
 
 			// 上・下
-			float z = CrossPlatformInputManager.GetAxisRaw("Vertical") * 0.2f + speed;
+			float z = CrossPlatformInputManager.GetAxisRaw("Vertical") * 0.2f * speed;
 			 
 			// 移動する向きを求める
 			Vector3 direction = new Vector3 (x,0,z);
