@@ -5,9 +5,12 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour {
 
 	PlayerAnimator playerAnimator;
+
+	public GameObject sword;
 	// Use this for initialization
 	void Start () {
 		playerAnimator = GetComponent<PlayerAnimator> ();
+		InvalidCollider ();
 	}
 	
 	// Update is called once per frame
@@ -20,6 +23,13 @@ public class PlayerAttack : MonoBehaviour {
 	public void Attack()
 	{
 		playerAnimator.Attack ();
-		Debug.Log ("攻撃");
+		//ソードのこライダーを有効にする
+		sword.GetComponent<BoxCollider> ().enabled = true;
+		Invoke ("InvalidCollider", 1.5f);
+	}
+	//剣のこライダーを無効化
+	void InvalidCollider()
+	{
+		sword.GetComponent<BoxCollider> ().enabled = false;
 	}
 }
