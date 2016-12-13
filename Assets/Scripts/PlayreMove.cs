@@ -29,7 +29,7 @@ public class PlayreMove : MonoBehaviour {
 		//ゲームが始まるかガチャシーンだったら何もしない
 		if (GameManager.Instance.BeforeGameStart()) return;
 		MoveInput ();
-		Direction ();
+
 	}
 	//移動する
 	void MoveInput()
@@ -59,6 +59,8 @@ public class PlayreMove : MonoBehaviour {
 			 
 			// 移動する向きを求める
 			direction = new Vector3 (x,0,z);
+			//移動方向を向く
+			transform.LookAt (transform.position + direction);
 
 			transform.position += direction;
 			//少しでも動いたら
@@ -69,17 +71,19 @@ public class PlayreMove : MonoBehaviour {
 			if(x == 0 && z == 0){
 				playerAnimator.Stop ();
 			}
+
+
 		}
 	}
 	public Vector3 direction;
-	//向きを決める
-	void Direction()
-	{
-		Vector3 diff = transform.position - prev;
-		if (diff.magnitude > 0.01) {
-			transform.rotation = Quaternion.LookRotation (diff);
-		}
-		prev = transform.position;
-	}
+//	//向きを決める
+//	void Direction()
+//	{
+//		Vector3 diff = transform.position - prev;
+//		if (diff.magnitude > 0.01) {
+//			transform.rotation = Quaternion.LookRotation (diff);
+//		}
+//		prev = transform.position;
+//	}
 
 }
