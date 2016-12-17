@@ -110,6 +110,7 @@
      <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSNativeAd.cs" />
      <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSNativeAdClient.cs" />
      <Compile Include="Assets\Scripts\AdvertiseManger.cs" />
+     <Compile Include="Assets\Scripts\Akio.cs" />
      <Compile Include="Assets\Scripts\BossEnemy.cs" />
      <Compile Include="Assets\Scripts\BossEnemyManager.cs" />
      <Compile Include="Assets\Scripts\BuyStatus.cs" />
@@ -124,6 +125,7 @@
      <Compile Include="Assets\Scripts\GatyaManager.cs" />
      <Compile Include="Assets\Scripts\Hiroshi.cs" />
      <Compile Include="Assets\Scripts\ItemManager.cs" />
+     <Compile Include="Assets\Scripts\Kantudan.cs" />
      <Compile Include="Assets\Scripts\MainUIManager.cs" />
      <Compile Include="Assets\Scripts\ManagerRoot.cs" />
      <Compile Include="Assets\Scripts\MySceneManager.cs" />

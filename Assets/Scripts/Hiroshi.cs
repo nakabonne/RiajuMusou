@@ -15,6 +15,8 @@ public class Hiroshi : MonoBehaviour {
 	Transform target;
 
 	string sceneName;
+
+	//bool isAttacked = false;
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
@@ -26,17 +28,21 @@ public class Hiroshi : MonoBehaviour {
 	void Update () {
 		if (sceneName == "Gatya") return;
 
-		count += Time.deltaTime;
+			count += Time.deltaTime;
+
 		//6秒以内かつターゲットに接してない時
-		if (count <= 6.0f && !isNear) {
+		if (count <= 4.0f && !isNear) {
 			Move ();
-		} else {
+		} 
+
+		if(count >= 4.0f)
+		{
 			Attack ();
 		}
 
 
 	}
-
+	//移動
 	void Move()
 	{
 //		transform.LookAt (target.transform);
@@ -53,14 +59,15 @@ public class Hiroshi : MonoBehaviour {
 	void Attack()
 	{
 		animator.SetTrigger ("Attack");
-		Instantiate (Bullet, transform.position, Quaternion.identity);
-		Invoke ("CountReset", 2.0f);
-	}
-	void CountReset()
-	{
+		Invoke ("BulletInstantiate", 2.0f);
 		count = 0;
 	}
-
+	//たま生成
+	void BulletInstantiate()
+	{
+		Instantiate (Bullet, transform.position, transform.rotation);
+	}
+	//------------------------------以下はターゲットに追いついた時の処理
 	bool isNear;
 	void OnTriggerEnter(Collider other)
 	{
