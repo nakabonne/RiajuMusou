@@ -140,6 +140,7 @@
      <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSNativeAdClient.cs" />
      <Compile Include="Assets\Scripts\AdvertiseManger.cs" />
      <Compile Include="Assets\Scripts\Akio.cs" />
+     <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\BeamModoki.cs" />
      <Compile Include="Assets\Scripts\BossEnemy.cs" />
      <Compile Include="Assets\Scripts\BossEnemyManager.cs" />

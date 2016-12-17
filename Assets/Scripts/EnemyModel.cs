@@ -10,15 +10,19 @@ public class EnemyModel : MonoBehaviour {
 
 	public Animator animator;
 
+	AudioSource sound;
+
+	bool isDeath = false;
 	// Use this for initialization
 	void Start () {
 		DecideHP ();
 		animator = GetComponent<Animator> ();
+		sound = GetComponent<AudioSource> ();
 	}
 
 	void Update()
 	{
-		if (hp <= 0) {
+		if (hp <= 0 && !isDeath) {
 			Deth ();
 		}
 	}
@@ -62,6 +66,8 @@ public class EnemyModel : MonoBehaviour {
 		AddExperience ();
 		//Deathアニメーション実行
 		animator.SetBool ("isDeath", true);
+		sound.Play ();
+		isDeath = true;
 	
 		Destroy (gameObject,2.0f);
 	}
