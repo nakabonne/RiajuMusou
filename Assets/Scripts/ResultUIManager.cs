@@ -7,6 +7,8 @@ public class ResultUIManager : MonoBehaviour {
 
 	public Text score;
 
+	public Text highScore;
+
 	public Text experience;
 
 	public Text reward;
@@ -38,6 +40,7 @@ public class ResultUIManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Score ();
+		HighScore ();
 		Experience ();
 		ShowMovie ();
 		Level ();
@@ -50,13 +53,19 @@ public class ResultUIManager : MonoBehaviour {
 	//スコアを表示
 	void Score()
 	{
-		score.text = ScoreManager.Instance.killedEnemy.ToString ();
+		score.text = "スコア：" + ScoreManager.Instance.killedEnemy.ToString ();
+	}
+
+	//ハイスコアを表示
+	void HighScore()
+	{
+		highScore.text = "ハイスコア：" + ScoreManager.Instance.highScore.ToString ();
 	}
 		
 	//経験値を表示
 	void Experience()
 	{
-		experience.text = ExperienceManager.Instance.experience.ToString ();
+		experience.text = "経験値" + ExperienceManager.Instance.experience.ToString ();
 	}
 	//各パラメーターレベルを表示
 	void Level()

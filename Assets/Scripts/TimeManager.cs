@@ -19,6 +19,7 @@ public class TimeManager : MonoBehaviour {
 		if (GameManager.Instance.BeforeGameStart()) return;
 		CountDown ();
 		if (time <= 0) {
+			SetHight ();
 			GoResult ();
 		}
 	}
@@ -27,6 +28,11 @@ public class TimeManager : MonoBehaviour {
 	void CountDown()
 	{
 		time -= 1.0f * Time.deltaTime;
+	}
+	//ハイスコアのセット
+	void SetHight()
+	{
+		ScoreManager.Instance.SetHighScore ();
 	}
 	//リザルトシーンへ遷移
 	void GoResult()

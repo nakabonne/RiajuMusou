@@ -28,10 +28,10 @@ public class PartnerGenerator : MonoBehaviour {
 	//カウントを減らす
 	void CutDownCount()
 	{
-		if (PartnerManager.Instance.currentPartner.name == "Hiroshi") {
+		if (PartnerManager.Instance.currentPartner.name == "Hiroshi"  && PartnerManager.Instance.hiroshihCount >= 0) {
 			PartnerManager.Instance.hiroshihCount--;
 		}
-		if (PartnerManager.Instance.currentPartner.name == "Satoru") {
+		if (PartnerManager.Instance.currentPartner.name == "Satoru" && PartnerManager.Instance.satoruCount >= 0) {
 			PartnerManager.Instance.satoruCount--;
 		}
 
