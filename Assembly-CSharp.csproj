@@ -115,6 +115,7 @@
      <Compile Include="Assets\Scripts\BossEnemyManager.cs" />
      <Compile Include="Assets\Scripts\BuyStatus.cs" />
      <Compile Include="Assets\Scripts\CameraMove.cs" />
+     <Compile Include="Assets\Scripts\Daisuke.cs" />
      <Compile Include="Assets\Scripts\DamageEffect.cs" />
      <Compile Include="Assets\Scripts\EnemyGenerator.cs" />
      <Compile Include="Assets\Scripts\EnemyModel.cs" />
