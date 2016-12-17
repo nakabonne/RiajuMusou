@@ -8,9 +8,12 @@ public class EnemyModel : MonoBehaviour {
 
 	public GameObject spark;
 
+	public Animator animator;
+
 	// Use this for initialization
 	void Start () {
 		DecideHP ();
+		animator = GetComponent<Animator> ();
 	}
 
 	void Update()
@@ -57,8 +60,10 @@ public class EnemyModel : MonoBehaviour {
 	{
 		AddScore ();
 		AddExperience ();
+		//Deathアニメーション実行
+		animator.SetBool ("isDeath", true);
 	
-		Destroy (gameObject);
+		Destroy (gameObject,2.0f);
 	}
 	//スコアを追加する
 	void AddScore()
