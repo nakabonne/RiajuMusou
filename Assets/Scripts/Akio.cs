@@ -13,6 +13,8 @@ public class Akio : MonoBehaviour {
 
 	public GameObject beam;
 
+	public GameObject beamModoki;
+
 	Transform target;
 
 	string sceneName;
@@ -60,13 +62,14 @@ public class Akio : MonoBehaviour {
 	void Attack()
 	{
 		animator.SetTrigger ("Attack");
-		Invoke ("BeamInstantiate", 0.5f);
+		Invoke ("BeamInstantiate", 0.8f);
 		count = 0;
 	}
 	//たま生成
 	void BeamInstantiate()
 	{
-		Instantiate (beam, transform.position, transform.rotation);
+		Instantiate (beam, transform.position + new Vector3 (0,4.0f,0), transform.rotation);
+		Instantiate (beamModoki, transform.position + new Vector3 (0, 3.0f, 0), transform.rotation);
 	}
 	//------------------------------以下はターゲットに追いついた時の処理
 	bool isNear;
