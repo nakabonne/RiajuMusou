@@ -122,6 +122,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Gate.cs" />
      <Compile Include="Assets\Scripts\GatyaManager.cs" />
+     <Compile Include="Assets\Scripts\Hiroshi.cs" />
      <Compile Include="Assets\Scripts\ItemManager.cs" />
      <Compile Include="Assets\Scripts\MainUIManager.cs" />
      <Compile Include="Assets\Scripts\ManagerRoot.cs" />

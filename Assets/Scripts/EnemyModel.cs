@@ -34,7 +34,7 @@ public class EnemyModel : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		//剣に当たったら
-		if (other.gameObject.tag == "Sord" || other.gameObject.tag =="Partner") {
+		if (other.gameObject.tag == "Sord" || other.gameObject.tag =="Attack") {
 			Damage ();
 		}
 	}
@@ -42,7 +42,7 @@ public class EnemyModel : MonoBehaviour {
 	void OnCollisionEnter(Collision other)
 	{
 		//剣に当たったら
-		if (other.gameObject.tag =="Partner") {
+		if (other.gameObject.tag =="Attack") {
 			Damage ();
 		}
 	}
