@@ -57,9 +57,15 @@
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <None Include="Assets\DiscoveryPack_Demo\_README_FIRST.txt" />
+     <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
+     <None Include="Assets\PopcornFX\README.txt" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\PopcornFX\Resources\PKFxDistQuickDirtyBlurEffect.shader" />
      <None Include="Assets\NendAd\Plugins\iOS\NADView_readme.txt" />
+     <None Include="Assets\PopcornFX\Resources\PKFxDepthCopyToColor.shader" />
+     <None Include="Assets\PopcornFX\Resources\PKFxDistortionEffect.shader" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
@@ -80,6 +86,15 @@
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="PKFx-Helper">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFx-Helper.dll</HintPath>
+ </Reference>
+ <Reference Include="PKFx-Runtime">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFx-Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="PKFxManager">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFxManager.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

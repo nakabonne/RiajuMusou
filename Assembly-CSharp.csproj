@@ -46,6 +46,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\AddPKFxFXComponent.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\BounceDie.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\CamZoom.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\FPSCam.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\PointClickSpawn.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\RomanCandle.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\RootyTootyPointNShooty.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\TimedSuicide.cs" />
      <Compile Include="Assets\ModernPeople\Modern People\Demo\Scripts\Anim.cs" />
      <Compile Include="Assets\ModernPeople\Modern People\Demo\Scripts\Presentation.cs" />
      <Compile Include="Assets\NendAd\Scripts\AD\Native\Events\NativeAdViewEvent.cs" />
@@ -136,9 +144,15 @@
      <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\TitleManager.cs" />
      <Compile Include="Assets\Scripts\UnityAdsExample.cs" />
+     <None Include="Assets\DiscoveryPack_Demo\_README_FIRST.txt" />
+     <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
+     <None Include="Assets\PopcornFX\README.txt" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\PopcornFX\Resources\PKFxDistQuickDirtyBlurEffect.shader" />
      <None Include="Assets\NendAd\Plugins\iOS\NADView_readme.txt" />
+     <None Include="Assets\PopcornFX\Resources\PKFxDepthCopyToColor.shader" />
+     <None Include="Assets\PopcornFX\Resources\PKFxDistortionEffect.shader" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
@@ -159,6 +173,15 @@
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="PKFx-Helper">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFx-Helper.dll</HintPath>
+ </Reference>
+ <Reference Include="PKFx-Runtime">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFx-Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="PKFxManager">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFxManager.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
