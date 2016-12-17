@@ -17,12 +17,15 @@ public class Tomoaki : MonoBehaviour {
 
 	string sceneName;
 
+	//public GameObject hand;
+
 	//bool isAttacked = false;
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
 		target = GameObject.Find ("TargetObj").transform;
 		sceneName = SceneManager.GetActiveScene ().name;
+		//hand = GameObject.Find ("RightHandRing4");
 	}
 
 	// Update is called once per frame
@@ -32,11 +35,11 @@ public class Tomoaki : MonoBehaviour {
 		count += Time.deltaTime;
 
 		//6秒以内かつターゲットに接してない時
-		if (count <= 4.0f && !isNear) {
+		if (count <= 7.0f && !isNear) {
 			Move ();
 		} 
 
-		if(count >= 4.0f)
+		if(count > 7.0f)
 		{
 			Attack ();
 		}
@@ -61,14 +64,15 @@ public class Tomoaki : MonoBehaviour {
 
 	void Attack()
 	{
+		Debug.Log ("あったく");
 		animator.SetTrigger ("Attack");
-		Invoke ("BeamInstantiate", 1.5f);
+		Invoke ("BeamInstantiate", 2.5f);
 		count = 0;
 	}
 	//たま生成
 	void BeamInstantiate()
 	{
-		Instantiate (bomb, transform.position, transform.rotation);
+		Instantiate (bomb, transform.position + new Vector3(0,4.0f,2.0f), transform.rotation);
 	}
 	//------------------------------以下はターゲットに追いついた時の処理
 	bool isNear;
