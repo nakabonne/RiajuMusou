@@ -11,6 +11,7 @@ public class Daisuke : MonoBehaviour {
 
 	float speed = 0.1f;
 
+	public GameObject explosion;
 
 	Transform target;
 
@@ -59,8 +60,13 @@ public class Daisuke : MonoBehaviour {
 	void Attack()
 	{
 		animator.SetTrigger ("Attack");
-		Invoke ("BeamInstantiate", 0.5f);
+		Invoke ("Explosion", 1.0f);
 		count = 0;
+	}
+
+	void Explosion()
+	{
+		Instantiate (explosion, transform.position + new Vector3(0,3.0f,0), Quaternion.identity);
 	}
 
 	//------------------------------以下はターゲットに追いついた時の処理

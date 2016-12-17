@@ -81,6 +81,8 @@
      <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\RomanCandle.cs" />
      <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\RootyTootyPointNShooty.cs" />
      <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\TimedSuicide.cs" />
+     <Compile Include="Assets\FireExplosionVFX\Scripts\FxSplash.cs" />
+     <Compile Include="Assets\FireExplosionVFX\Scripts\LaunchEffect.cs" />
      <Compile Include="Assets\ModernPeople\Modern People\Demo\Scripts\Anim.cs" />
      <Compile Include="Assets\ModernPeople\Modern People\Demo\Scripts\Presentation.cs" />
      <Compile Include="Assets\NendAd\Scripts\AD\Native\Events\NativeAdViewEvent.cs" />
@@ -149,6 +151,7 @@
      <Compile Include="Assets\Scripts\EnemyModel.cs" />
      <Compile Include="Assets\Scripts\EnemyMove.cs" />
      <Compile Include="Assets\Scripts\ExperienceManager.cs" />
+     <Compile Include="Assets\Scripts\Explosion.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Gate.cs" />
      <Compile Include="Assets\Scripts\GatyaManager.cs" />
