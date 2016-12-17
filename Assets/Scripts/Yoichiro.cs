@@ -14,6 +14,8 @@ public class Yoichiro : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
+		if (GameManager.Instance.BeforeGameStart ()) return;
 		Move ();
 		count += Time.deltaTime;
 		if (count >= 0.5f) {

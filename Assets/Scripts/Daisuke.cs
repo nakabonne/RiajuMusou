@@ -28,6 +28,7 @@ public class Daisuke : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (sceneName == "Gatya") return;
+		if (GameManager.Instance.BeforeGameStart ()) return;
 
 		count += Time.deltaTime;
 
