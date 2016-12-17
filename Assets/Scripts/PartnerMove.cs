@@ -35,7 +35,7 @@ public class PartnerMove : MonoBehaviour {
 		transform.LookAt(targetObj.transform);
 
 		//自分自身の位置から相対的に移動する
-		transform.Translate(Vector3.forward);
+		transform.Translate(Vector3.forward * 0.3f);
 	}
 
 	//指定されたタグの中で最も近いものを取得

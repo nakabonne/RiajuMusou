@@ -148,10 +148,10 @@
      <Compile Include="Assets\Scripts\StageManager.cs" />
      <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\TitleManager.cs" />
+     <Compile Include="Assets\Scripts\Tomoaki.cs" />
      <Compile Include="Assets\Scripts\UnityAdsExample.cs" />
-     <Compile Include="Assets\Tomoaki.cs" />
-     <Compile Include="Assets\Yoichiro.cs" />
-     <Compile Include="Assets\YoichiroBullet.cs" />
+     <Compile Include="Assets\Scripts\Yoichiro.cs" />
+     <Compile Include="Assets\Scripts\YoichiroBullet.cs" />
      <None Include="Assets\DiscoveryPack_Demo\_README_FIRST.txt" />
      <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
      <None Include="Assets\PopcornFX\README.txt" />

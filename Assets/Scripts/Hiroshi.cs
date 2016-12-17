@@ -65,7 +65,7 @@ public class Hiroshi : MonoBehaviour {
 	//たま生成
 	void BulletInstantiate()
 	{
-		Instantiate (Bullet, transform.position, transform.rotation);
+		Instantiate (Bullet, transform.position + new Vector3(0,2.2f,0),transform.rotation);
 	}
 	//------------------------------以下はターゲットに追いついた時の処理
 	bool isNear;

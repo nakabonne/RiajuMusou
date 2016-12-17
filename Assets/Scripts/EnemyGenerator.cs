@@ -36,7 +36,7 @@ public class EnemyGenerator : MonoBehaviour {
 	//敵を生成する位置
 	Vector3 GeneratePos()
 	{
-		return new Vector3 (Random.Range (-12, 12), 0, Random.Range (transform.position.z + 20, transform.position.z + 200));
+		return new Vector3 (Random.Range (-12, 12), 10, Random.Range (transform.position.z + 20, transform.position.z + 200));
 	}
 
 	//ジェネレーターを生成する位置
