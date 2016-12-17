@@ -42,7 +42,7 @@ public class EnemyGenerator : MonoBehaviour {
 	//ジェネレーターを生成する位置
 	Vector3 GeneratorGeneratePos()
 	{
-		return new Vector3 (transform.position.x, transform.position.y, transform.position.z + 230.0f);
+		return new Vector3 (transform.position.x, transform.position.y, transform.position.z + 100.0f);
 	}
 
 //	//最初の生成

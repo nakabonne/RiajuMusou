@@ -20,3 +20,6 @@
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/PKFx-Helper.dll
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/PKFx-Runtime.dll
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/PKFxManager.dll

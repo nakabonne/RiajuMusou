@@ -22,3 +22,6 @@
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/UnityEngine.Advertisements.dll
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/PKFx-Helper.dll
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/PKFx-Runtime.dll
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/PKFxManager.dll
