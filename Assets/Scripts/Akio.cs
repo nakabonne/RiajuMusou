@@ -9,7 +9,7 @@ public class Akio : MonoBehaviour {
 
 	public Animator animator;
 
-	float speed = 0.1f;
+	float speed = 0.8f;
 
 	public GameObject beam;
 
