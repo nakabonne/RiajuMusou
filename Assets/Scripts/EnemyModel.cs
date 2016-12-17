@@ -6,6 +6,8 @@ public class EnemyModel : MonoBehaviour {
 
 	public float hp;
 
+	public GameObject spark;
+
 	// Use this for initialization
 	void Start () {
 		DecideHP ();
@@ -46,6 +48,8 @@ public class EnemyModel : MonoBehaviour {
 	public void Damage()
 	{
 		hp--;
+		//火花生成
+		Instantiate (spark, transform.position + new Vector3(0,3.0f,0), Quaternion.identity);
 	}
 
 	//死んだ時の処理
