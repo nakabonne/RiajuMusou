@@ -12,7 +12,7 @@ public class GatyaManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		randomNum = Random.Range (1, 3);
+		randomNum = Random.Range (1, 7);
 	}
 	
 	// Update is called once per frame

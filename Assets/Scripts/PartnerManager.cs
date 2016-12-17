@@ -9,6 +9,11 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 	//それぞれを使用できる数
 	public int hiroshihCount;
 	public int satoruCount;
+	public int akioCount;
+	public int daisukeCount;
+	public int tomoakiCount;
+	public int youichiroCount;
+
 
 	//現在のパートナー
 	public GameObject currentPartner;
@@ -44,6 +49,10 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 	{
 		hiroshihCount = PlayerPrefs.GetInt ("HIROSHI");
 		satoruCount = PlayerPrefs.GetInt ("SATORU");
+		akioCount = PlayerPrefs.GetInt ("AKIO");
+		daisukeCount = PlayerPrefs.GetInt ("DAISUKE");
+		tomoakiCount = PlayerPrefs.GetInt ("TOMOAKI");
+		youichiroCount = PlayerPrefs.GetInt ("YOUICHIRO");
 	}
 
 	//パートナー変更
@@ -73,7 +82,21 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 		case 2:
 			partner = (GameObject)Resources.Load ("PrefabPartners/" + "Satoru");
 			break;
+		case 3:
+			partner = (GameObject)Resources.Load ("PrefabPartners/" + "Akio");
+			break;
+		case 4:
+			partner = (GameObject)Resources.Load ("PrefabPartners/" + "Daisuke");
+			break;
+		case 5:
+			partner = (GameObject)Resources.Load ("PrefabPartners/" + "Tomoaki");
+			break;
+		case 6:
+			partner = (GameObject)Resources.Load ("PrefabPartners/" + "Youichiro");
+			break;
 		}
+
+	
 		return partner;
 	}
 	//パートナーの使用回数を表示
@@ -81,24 +104,41 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 	{
 		switch (id) {
 		case 1:
-			Debug.Log("プラス");
 			hiroshihCount += 3;
 			SaveCount ();
-
 			break;
 		case 2:
-			Debug.Log("プラス");
 			satoruCount += 3;
-
+			SaveCount ();
+			break;
+		case 3:
+			akioCount += 3;
+			SaveCount ();
+			break;
+		case 4:
+			daisukeCount += 3;
+			SaveCount ();
+			break;
+		case 5:
+			tomoakiCount += 3;
+			SaveCount ();
+			break;
+		case 6:
+			youichiroCount += 3;
 			SaveCount ();
 			break;
 		}
+	
 	}
 	//カウントをセーブ
 	public void SaveCount()
 	{
 		PlayerPrefs.SetInt ("HIROSHI", hiroshihCount);
 		PlayerPrefs.SetInt ("SATORU", satoruCount);
+		PlayerPrefs.SetInt ("AKIO", akioCount);
+		PlayerPrefs.SetInt ("DAISUKE", daisukeCount);
+		PlayerPrefs.SetInt ("TOMOAKI", tomoakiCount);
+		PlayerPrefs.SetInt ("YOUICHIRO", youichiroCount);
 	}
 
 }

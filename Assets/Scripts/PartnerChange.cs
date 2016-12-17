@@ -9,8 +9,21 @@ public class PartnerChange : MonoBehaviour {
 
 	public GameObject hiroshiButtion;
 	public Text hiroshiCountLabel;
+
 	public GameObject satoruButton;
 	public Text satoruCountLabel;
+
+	public GameObject akioButton;
+	public Text akioCountLabel;
+
+	public GameObject daisukeButton;
+	public Text daisukeCountLabel;
+
+	public GameObject tomoakiButton;
+	public Text tomoakiCountLabel;
+
+	public GameObject youichiroButton;
+	public Text youichiroCountLabel;
 	// Use this for initialization
 	void Start () {
 		DisplayPartner ();
@@ -24,6 +37,18 @@ public class PartnerChange : MonoBehaviour {
 		if (PartnerManager.Instance.satoruCount <= 0) {
 			satoruButton.SetActive (false);
 		}
+		if (PartnerManager.Instance.akioCount <= 0) {
+			akioButton.SetActive (false);
+		}
+		if (PartnerManager.Instance.daisukeCount <= 0) {
+			daisukeButton.SetActive (false);
+		}
+		if (PartnerManager.Instance.tomoakiCount <= 0) {
+			tomoakiButton.SetActive (false);
+		}
+		if (PartnerManager.Instance.youichiroCount <= 0) {
+			youichiroButton.SetActive (false);
+		}
 	}
 	
 	// Update is called once per frame
@@ -35,6 +60,10 @@ public class PartnerChange : MonoBehaviour {
 	{
 		hiroshiCountLabel.text = "× " + PartnerManager.Instance.hiroshihCount.ToString ();
 		satoruCountLabel.text = "× " + PartnerManager.Instance.satoruCount.ToString ();
+		akioCountLabel.text = "× " + PartnerManager.Instance.akioCount.ToString ();
+		daisukeCountLabel.text = "× " + PartnerManager.Instance.daisukeCount.ToString ();
+		tomoakiCountLabel.text = "× " + PartnerManager.Instance.tomoakiCount.ToString ();
+		youichiroCountLabel.text = "× " + PartnerManager.Instance.youichiroCount.ToString ();
 	}
 	//パートナーを選択
 	public void Choose(string partnerName)
