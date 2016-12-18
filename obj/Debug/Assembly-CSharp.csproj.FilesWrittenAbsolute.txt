@@ -25,3 +25,4 @@
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/PKFx-Helper.dll
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/PKFx-Runtime.dll
 /Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/PKFxManager.dll
+/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Temp/bin/Debug/DOTween.dll

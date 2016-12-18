@@ -21,6 +21,11 @@ public class ResultUIManager : MonoBehaviour {
 	public Text sordLengthLevel;
 	//スピードのレベルを表示
 	public Text speedLevel;
+	//値段
+	public GameObject buyStatusObj;
+	BuyStatus buystatus;
+	public Text SwordPriceLabel;
+	public Text SpeedPriceLabel;
 
 	//--------------------------------
 
@@ -39,6 +44,7 @@ public class ResultUIManager : MonoBehaviour {
 		movieRandomShowTiming = AdvertiseManger.Instance.MovieShowTiming ();
 
 		ExperienceManager.Instance.isReward = false;
+		buystatus = buyStatusObj.GetComponent<BuyStatus> ();
 	}
 	
 	// Update is called once per frame
@@ -48,6 +54,7 @@ public class ResultUIManager : MonoBehaviour {
 		Experience ();
 		ShowMovie ();
 		Level ();
+		Price ();
 		//報酬をもらったら
 		if (ExperienceManager.Instance.isReward) {
 			ShowReward ();
@@ -112,5 +119,11 @@ public class ResultUIManager : MonoBehaviour {
 	{
 		ExperienceManager.Instance.isReward = false;
 		reward.enabled = false;
+	}
+	//値段を表示
+	void Price()
+	{
+		SwordPriceLabel.text = "Pt："+buystatus.swordPrice;
+		SpeedPriceLabel.text = "Pt："+buystatus.speedPrice;
 	}
 }

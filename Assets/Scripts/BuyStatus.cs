@@ -3,10 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BuyStatus : MonoBehaviour {
-	//値段
-	int Price(int level)
+//	//値段
+//	int Price(int level)
+//	{
+//		return 80 * level;
+//	}
+	public int swordPrice;
+	public int speedPrice;
+	void Start()
 	{
-		return 80 * level;
+		//剣の値段
+	    swordPrice = ParameterManager.Instance.sordLength * 10;
+		//スピードの値段
+		speedPrice = ParameterManager.Instance.speed * 10;
 	}
 
 	//剣の長さレベルを上げる
@@ -15,7 +24,7 @@ public class BuyStatus : MonoBehaviour {
 		if (ExperienceManager.Instance.experience <= 0)
 			return;
 		//経験値の支払い
-		ExperienceManager.Instance.experience -= Price(ParameterManager.Instance.sordLength * 10);
+		ExperienceManager.Instance.experience -= swordPrice;
 		ExperienceManager.Instance.Save ();
 		//レベルアップ
 		ParameterManager.Instance.sordLength++;
@@ -30,7 +39,7 @@ public class BuyStatus : MonoBehaviour {
 		if (ExperienceManager.Instance.experience <= 0)
 			return;
 		//経験値の支払い
-		ExperienceManager.Instance.experience -= Price(ParameterManager.Instance.speed * 10);
+		ExperienceManager.Instance.experience -= speedPrice;
 		ExperienceManager.Instance.Save ();
 		//レベルアップ
 		ParameterManager.Instance.speed++;
@@ -38,4 +47,5 @@ public class BuyStatus : MonoBehaviour {
 
 
 	}
+
 }
