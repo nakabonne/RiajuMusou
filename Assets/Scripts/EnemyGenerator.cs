@@ -28,7 +28,7 @@ public class EnemyGenerator : MonoBehaviour {
 			Instantiate(enemy,GeneratePos(),Quaternion.identity);
 		}
 		//ボスの生成
-		BossGenerate ();
+		//BossGenerate ();
 		//次のジェネレーターの生成
 		Instantiate (enemyGenerator,GeneratorGeneratePos(),Quaternion.identity);
 		Destroy (gameObject);
@@ -36,13 +36,13 @@ public class EnemyGenerator : MonoBehaviour {
 	//敵を生成する位置
 	Vector3 GeneratePos()
 	{
-		return new Vector3 (Random.Range (-12, 12), 10, Random.Range (transform.position.z + 20, transform.position.z + 200));
+		return new Vector3 (Random.Range (-10, 10), 10, Random.Range (transform.position.z + 100.0f, transform.position.z + 300.0f));
 	}
 
 	//ジェネレーターを生成する位置
 	Vector3 GeneratorGeneratePos()
 	{
-		return new Vector3 (transform.position.x, transform.position.y, transform.position.z + 100.0f);
+		return new Vector3 (transform.position.x, transform.position.y, transform.position.z + 70.0f);
 	}
 
 //	//最初の生成
