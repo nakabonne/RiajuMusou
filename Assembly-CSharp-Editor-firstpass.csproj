@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+     <None Include="Assets\MasterCube\README.txt" />
      <None Include="Assets\DiscoveryPack_Demo\_README_FIRST.txt" />
      <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
      <None Include="Assets\BasicBeamShot\sh\Add_UVScroll_sh.shader" />
@@ -66,6 +67,7 @@
      <None Include="Assets\PopcornFX\Resources\PKFxDepthCopyToColor.shader" />
      <None Include="Assets\PopcornFX\Resources\PKFxDistortionEffect.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+     <None Include="Assets\MasterCube\license.txt" />
      <None Include="Assets\BasicBeamShot\HowToUse_EN.txt" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
