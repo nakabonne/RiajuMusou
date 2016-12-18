@@ -24,7 +24,7 @@ public class EnemyGenerator : MonoBehaviour {
 	//生成
 	public void Generate()
 	{
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 50; i++) {
 			Instantiate(enemy,GeneratePos(),Quaternion.identity);
 		}
 		//ボスの生成

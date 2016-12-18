@@ -1,30 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PartnerMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyGenerator.cs">
     <Files>
-      <File FileName="Assets/Scripts/BossEnemy.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PartnerChange.cs" Line="66" Column="75" />
-      <File FileName="Assets/Scripts/PartnerGenerator.cs" Line="46" Column="75" />
-      <File FileName="Assets/Scripts/PlayerAnimator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerAttack.cs" Line="28" Column="33" />
-      <File FileName="Assets/Scripts/PrepareManager.cs" Line="17" Column="35" />
-      <File FileName="Assets/Scripts/ResultUIManager.cs" Line="68" Column="25" />
-      <File FileName="Assets/Scripts/ScoreManager.cs" Line="23" Column="19" />
-      <File FileName="Assets/Scripts/Sord.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/StageGenerator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PartnerManager.cs" Line="95" Column="72" />
-      <File FileName="Assets/Scripts/GatyaManager.cs" Line="18" Column="14" />
-      <File FileName="Assets/Scripts/MainUIManager.cs" Line="6" Column="1" />
-      <File FileName="Assets/Scripts/EnemyModel.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/PartnerMove.cs" Line="38" Column="45" />
-      <File FileName="Assets/Scripts/Hiroshi.cs" Line="77" Column="3" />
-      <File FileName="Assets/Scripts/Kantudan.cs" Line="14" Column="33" />
-      <File FileName="Assets/Scripts/Akio.cs" Line="63" Column="36" />
-      <File FileName="Assets/Scripts/Daisuke.cs" Line="57" Column="3" />
-      <File FileName="Assets/Tomoaki.cs" Line="35" Column="17" />
-      <File FileName="Assets/Yoichiro.cs" Line="19" Column="19" />
-      <File FileName="Assets/YoichiroBullet.cs" Line="10" Column="31" />
-      <File FileName="Assets/Scripts/EnemyGenerator.cs" Line="39" Column="49" />
+      <File FileName="Assets/Scripts/Explosion.cs" Line="12" Column="2" />
+      <File FileName="Assets/Scripts/Tomoaki.cs" Line="34" Column="55" />
+      <File FileName="Assets/Scripts/Ireba.cs" Line="14" Column="75" />
+      <File FileName="Assets/Scripts/AudioManager.cs" Line="11" Column="15" />
+      <File FileName="Assets/Scripts/Akio.cs" Line="12" Column="19" />
+      <File FileName="Assets/Scripts/Daisuke.cs" Line="31" Column="55" />
+      <File FileName="Assets/Scripts/Yoichiro.cs" Line="38" Column="47" />
+      <File FileName="Assets/Scripts/ResultUIManager.cs" Line="35" Column="42" />
+      <File FileName="Assets/Scripts/AdvertiseManger.cs" Line="12" Column="28" />
+      <File FileName="Assets/Scripts/UnityAdsExample.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TargetObj.cs" Line="14" Column="3" />
+      <File FileName="Assets/Scripts/EnemyMove.cs" Line="12" Column="39" />
+      <File FileName="Assets/Scripts/EnemyGenerator.cs" Line="27" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
