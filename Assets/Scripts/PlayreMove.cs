@@ -19,7 +19,7 @@ public class PlayreMove : MonoBehaviour {
 		//初期位置を保存
 		prev = transform.position;
 		//スピードを決定
-		speed = 1.0f + ParameterManager.Instance.speed * 0.1f;
+		speed = 2.0f + ParameterManager.Instance.speed * 0.1f;
 		//アニメータークラスを参照
 		playerAnimator = GetComponent<PlayerAnimator> ();
 	}

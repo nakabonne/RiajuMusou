@@ -6,6 +6,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 
 	//プレイ可能状態ならtrueを返す
 	public bool isPlaying;
+	//タップトゥースタート
+	public GameObject tapToStart;
 	// Use this for initialization
 	void Start () {
 		isPlaying = false;
@@ -15,6 +17,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 	void Update () {
 		if (BeforePlayClick()) {
 			GameStart ();
+			tapToStart.SetActive (false);
 		}
 		//これより下はゲーム開始後しか呼ばれない
 		if (!isPlaying) return;
