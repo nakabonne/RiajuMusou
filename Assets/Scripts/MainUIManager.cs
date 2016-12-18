@@ -43,7 +43,7 @@ public class MainUIManager : MonoBehaviour {
 	//獲得経験値の表示
 	void Experience()
 	{
-		experience.text = "Experinence：" + ExperienceManager.Instance.experience.ToString();
+		experience.text = "Pt：" + ExperienceManager.Instance.experience.ToString();
 	}
 
 	void StageLevel()

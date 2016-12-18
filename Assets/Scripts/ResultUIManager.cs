@@ -53,26 +53,26 @@ public class ResultUIManager : MonoBehaviour {
 	//スコアを表示
 	void Score()
 	{
-		score.text = "スコア：" + ScoreManager.Instance.killedEnemy.ToString ();
+		score.text = "Score：" + ScoreManager.Instance.killedEnemy.ToString ();
 	}
 
 	//ハイスコアを表示
 	void HighScore()
 	{
-		highScore.text = "ハイスコア：" + ScoreManager.Instance.highScore.ToString ();
+		highScore.text = "HighScore：" + ScoreManager.Instance.highScore.ToString ();
 	}
 		
 	//経験値を表示
 	void Experience()
 	{
-		experience.text = "経験値" + ExperienceManager.Instance.experience.ToString ();
+		experience.text = "Pt：" + ExperienceManager.Instance.experience.ToString ();
 	}
 	//各パラメーターレベルを表示
 	void Level()
 	{
-		sordLengthLevel.text = "Lv:" + ParameterManager.Instance.sordLength;
+		sordLengthLevel.text = "Sword Lv:" + ParameterManager.Instance.sordLength;
 
-		speedLevel.text = "Lv:" + ParameterManager.Instance.speed;
+		speedLevel.text = "Speed Lv:" + ParameterManager.Instance.speed;
 	}
 	//リトライ
 	public void Retry()
