@@ -63,7 +63,7 @@ public class PartnerManager : SingletonMonoBehaviour<PartnerManager> {
 		currentPartner = (GameObject)Resources.Load ("PrefabPartners/" + name);
 		//保存
 		PlayerPrefs.SetString ("PARTNER", name);
-		Debug.Log ("パートナーは" + name + "に変更");
+
 	}
 	//パートナーがすでに選択され、保存されている場合trueを返す
 	bool IsChoosingPartner()

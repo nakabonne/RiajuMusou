@@ -20,13 +20,15 @@ public class Hiroshi : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
-		target = GameObject.Find ("TargetObj").transform;
+		if (sceneName == "Main") {
+			target = GameObject.Find ("TargetObj").transform;
+		}
 		sceneName = SceneManager.GetActiveScene ().name;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (sceneName == "Gatya") return;
+		if (sceneName != "Main") return;
 		if (GameManager.Instance.BeforeGameStart ()) return;
 
 			count += Time.deltaTime;

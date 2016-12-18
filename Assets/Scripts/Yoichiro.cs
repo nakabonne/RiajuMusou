@@ -1,15 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Yoichiro : MonoBehaviour {
 
 	public GameObject bullet;
 	float count = 0;
 	Transform target;
+	string sceneName;
 	// Use this for initialization
 	void Start () {
-		target = GameObject.Find ("LastTarget").transform;
+		sceneName = SceneManager.GetActiveScene ().name;
+		if (sceneName == "Main") {
+			target = GameObject.Find ("LastTarget").transform;
+		}
 	}
 	
 	// Update is called once per frame
