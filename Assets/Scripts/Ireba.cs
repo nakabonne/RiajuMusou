@@ -11,7 +11,7 @@ public class Ireba : MonoBehaviour {
 		//プレイヤーを探す
 		tomoaki = GameObject.FindGameObjectWithTag("Partner");
 		//プレイヤーの横方向の向きを取得
-		tomoakiVec = tomoaki.transform.TransformDirection(Vector3.forward)  * 50;
+		tomoakiVec = tomoaki.transform.TransformDirection(new Vector3 (0,5.0f,20.0f));
 		//プレイヤーの縦方向の向きを取得
 		tomoakiVec += Vector3.up * 1;
 		// 爆弾にプレイヤーの向いてる方向への力を与える

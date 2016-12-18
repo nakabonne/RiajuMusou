@@ -60,12 +60,15 @@ public class Tomoaki : MonoBehaviour {
 //		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(vec.x, 0, vec.z)), 1.0f);
 //		transform.Translate(Vector3.forward * speed); // 正面方向に移動
 
-		transform.Translate (0, 0, 1 * speed);
+		Vector3 vec = target.position - transform.position;
+
+		// ターゲットの方向を向く
+		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(vec.x, 0, vec.z)), 1.0f);
+		transform.Translate(Vector3.forward * speed); // 正面方向に移動
 	}
 
 	void Attack()
 	{
-		Debug.Log ("あったく");
 		animator.SetTrigger ("Attack");
 		Invoke ("BeamInstantiate", 2.5f);
 		count = 0;

@@ -10,6 +10,6 @@ public class Sord : MonoBehaviour {
 	//長さを決定
 	void Length()
 	{
-		transform.localScale += new Vector3 (0, ParameterManager.Instance.sordLength * 0.2f, 0);
+		transform.localScale += new Vector3 (ParameterManager.Instance.sordLength * 0.2f, 0, 0);
 	}
 }
