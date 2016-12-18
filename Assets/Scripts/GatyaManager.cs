@@ -10,6 +10,7 @@ public class GatyaManager : MonoBehaviour {
 	public GameObject returnButon;
 
 	public GameObject gatyaButton;
+	public GameObject gatyabutton;
 
 	public GameObject house;
 
@@ -27,6 +28,7 @@ public class GatyaManager : MonoBehaviour {
 	//ガチャを開始
 	public void GatyaStart()
 	{
+		Debug.Log ("がちゃーーー");
 		house.transform.DOPunchScale (new Vector3 (2f, 2f, 2f), 3f, 3, 0);
 		Invoke ("Tanjou",2.0f);
 		//経験値を減らす
@@ -38,6 +40,7 @@ public class GatyaManager : MonoBehaviour {
 		PartnerManager.Instance.EffectivePartner (randomNum);
 		//ガチャボタンを非表示にする
 		gatyaButton.SetActive(false);
+		gatyabutton.SetActive (false);
 		Invoke ("ReturnButtonDisplay", 3.0f);
 
 	}
