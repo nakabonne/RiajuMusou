@@ -73,6 +73,8 @@
      <Compile Include="Assets\BasicBeamShot\Script\ShotBase.cs" />
      <Compile Include="Assets\BasicBeamShot\Script\ShotParticleEmitter.cs" />
      <Compile Include="Assets\BasicBeamShot\Script\ShotParticle_Scale.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
      <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\AddPKFxFXComponent.cs" />
      <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\BounceDie.cs" />
      <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\CamZoom.cs" />
@@ -187,6 +189,7 @@
      <Compile Include="Assets\Scripts\UnityAdsExample.cs" />
      <Compile Include="Assets\Scripts\Yoichiro.cs" />
      <Compile Include="Assets\Scripts\YoichiroBullet.cs" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\MasterCube\README.txt" />
      <None Include="Assets\DiscoveryPack_Demo\_README_FIRST.txt" />
      <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
@@ -238,6 +241,9 @@
  </Reference>
  <Reference Include="PKFxManager">
  <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFxManager.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

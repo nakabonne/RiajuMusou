@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class GatyaManager : MonoBehaviour {
 
@@ -9,6 +10,10 @@ public class GatyaManager : MonoBehaviour {
 	public GameObject returnButon;
 
 	public GameObject gatyaButton;
+
+	public GameObject house;
+
+	public GameObject explosion;
 
 	// Use this for initialization
 	void Start () {
@@ -22,17 +27,30 @@ public class GatyaManager : MonoBehaviour {
 	//ガチャを開始
 	public void GatyaStart()
 	{
+		house.transform.DOPunchScale (new Vector3 (3f, 3f, 3f), 3f, 3, 0);
+		Invoke ("Tanjou",2.0f);
 		//経験値を減らす
 		ExperienceManager.Instance.experience -= 1000;
 		ExperienceManager.Instance.Save ();
 		//ランダムに選出されたパートナーを生成
-		Instantiate (PartnerManager.Instance.RandomPartner (randomNum),new Vector3 (0,0,0),Quaternion.identity);
+		Instantiate (PartnerManager.Instance.RandomPartner (randomNum),new Vector3 (0,0,-5.0f),Quaternion.identity);
 		//パートナーを使用可にする
 		PartnerManager.Instance.EffectivePartner (randomNum);
-		//戻るボタンを表示する
-		returnButon.SetActive(true);
 		//ガチャボタンを非表示にする
 		gatyaButton.SetActive(false);
+		Invoke ("ReturnButtonDisplay", 3.0f);
+
+	}
+	void ReturnButtonDisplay()
+	{
+		//戻るボタンを表示する
+		returnButon.SetActive(true);
+	}
+
+	void Tanjou()
+	{
+		Instantiate (explosion, house.transform.position + new Vector3 (0,1.0f,0), Quaternion.identity);
+		Destroy (house);
 	}
 
 	public void Return()
