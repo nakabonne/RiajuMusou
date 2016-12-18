@@ -135,6 +135,9 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
  <Reference Include="PKFx-Helper">
  <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFx-Helper.dll</HintPath>
  </Reference>
@@ -143,9 +146,6 @@
  </Reference>
  <Reference Include="PKFxManager">
  <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFxManager.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

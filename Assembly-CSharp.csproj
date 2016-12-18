@@ -73,6 +73,8 @@
      <Compile Include="Assets\BasicBeamShot\Script\ShotBase.cs" />
      <Compile Include="Assets\BasicBeamShot\Script\ShotParticleEmitter.cs" />
      <Compile Include="Assets\BasicBeamShot\Script\ShotParticle_Scale.cs" />
+     <Compile Include="Assets\ComboPack\FantasySkin\Scripts\ShowSliderValue.cs" />
+     <Compile Include="Assets\ComboPack\FantasySkin\Scripts\TiltWindow.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
      <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\AddPKFxFXComponent.cs" />
@@ -233,6 +235,9 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
  <Reference Include="PKFx-Helper">
  <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFx-Helper.dll</HintPath>
  </Reference>
@@ -241,9 +246,6 @@
  </Reference>
  <Reference Include="PKFxManager">
  <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFxManager.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

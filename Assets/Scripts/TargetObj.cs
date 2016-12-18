@@ -12,6 +12,6 @@ public class TargetObj : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-			transform.position = new Vector3 (0, player.transform.position.y, player.transform.position.z + 24.0f);
+			transform.position = new Vector3 (0, player.transform.position.y, player.transform.position.z + 30.0f);
 	}
 }
