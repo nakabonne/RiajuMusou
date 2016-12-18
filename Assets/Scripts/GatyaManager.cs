@@ -27,7 +27,7 @@ public class GatyaManager : MonoBehaviour {
 	//ガチャを開始
 	public void GatyaStart()
 	{
-		house.transform.DOPunchScale (new Vector3 (3f, 3f, 3f), 3f, 3, 0);
+		house.transform.DOPunchScale (new Vector3 (2f, 2f, 2f), 3f, 3, 0);
 		Invoke ("Tanjou",2.0f);
 		//経験値を減らす
 		ExperienceManager.Instance.experience -= 1000;

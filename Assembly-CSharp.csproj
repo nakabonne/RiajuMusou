@@ -178,6 +178,7 @@
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\PlayreMove.cs" />
      <Compile Include="Assets\Scripts\PrepareManager.cs" />
+     <Compile Include="Assets\Scripts\PresentBox.cs" />
      <Compile Include="Assets\Scripts\ResultUIManager.cs" />
      <Compile Include="Assets\Scripts\SaveData.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />

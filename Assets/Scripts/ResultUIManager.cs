@@ -14,6 +14,8 @@ public class ResultUIManager : MonoBehaviour {
 	public Text reward;
 	//動画広告を見せるボタン
 	public GameObject movieShowButton;
+	public GameObject present;
+	public GameObject particleWhite;
 
 	//剣のレベルを表示
 	public Text sordLengthLevel;
@@ -29,6 +31,8 @@ public class ResultUIManager : MonoBehaviour {
 	void Start () {
 		//動画広告ボタンを非表示に
 		movieShowButton.SetActive (false);
+		present.SetActive (false);
+		particleWhite.SetActive (false);
 		//報酬額を非表示
 		reward.enabled = false;
 		//動画を表示するか決定
@@ -83,6 +87,8 @@ public class ResultUIManager : MonoBehaviour {
 	//ガチャ
 	public void Gatya()
 	{
+		if (ExperienceManager.Instance.experience <= 0)
+			return;
 		MySceneManager.Instance.GoGatya ();
 	}
 	//動画広告ボタンをランダムに生成
@@ -90,6 +96,8 @@ public class ResultUIManager : MonoBehaviour {
 	{
 		if (movieRandomShowTiming == 1) {
 			movieShowButton.SetActive (true);
+			present.SetActive (true);
+			particleWhite.SetActive (true);
 		}
 	}
 	//報酬額を表示

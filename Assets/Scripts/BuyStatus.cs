@@ -12,26 +12,30 @@ public class BuyStatus : MonoBehaviour {
 	//剣の長さレベルを上げる
 	public void UpSordLength()
 	{
+		if (ExperienceManager.Instance.experience <= 0)
+			return;
 		//経験値の支払い
-		ExperienceManager.Instance.experience -= Price(ParameterManager.Instance.sordLength);
+		ExperienceManager.Instance.experience -= Price(ParameterManager.Instance.sordLength * 10);
 		ExperienceManager.Instance.Save ();
 		//レベルアップ
 		ParameterManager.Instance.sordLength++;
 		ParameterManager.Instance.Save ();
 
-		Debug.Log ("剣の長さレベルは" + ParameterManager.Instance.sordLength);
+
 	}
 
 	//スピードレベルを上げる
 	public void UpSpeed()
 	{
+		if (ExperienceManager.Instance.experience <= 0)
+			return;
 		//経験値の支払い
-		ExperienceManager.Instance.experience -= Price(ParameterManager.Instance.speed);
+		ExperienceManager.Instance.experience -= Price(ParameterManager.Instance.speed * 10);
 		ExperienceManager.Instance.Save ();
 		//レベルアップ
 		ParameterManager.Instance.speed++;
 		ParameterManager.Instance.Save ();
 
-		Debug.Log ("スピードは" + ParameterManager.Instance.speed);
+
 	}
 }

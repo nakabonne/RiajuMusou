@@ -1,7 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PartnerChange.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GatyaManager.cs">
     <Files>
+      <File FileName="Assets/Scripts/ResultUIManager.cs" Line="95" Column="29" />
       <File FileName="Assets/Scripts/PartnerChange.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Akio.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Sord.cs" Line="1" Column="1" />
@@ -11,14 +12,15 @@
       <File FileName="Assets/Scripts/AudioManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Daisuke.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Yoichiro.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ResultUIManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AdvertiseManger.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AdvertiseManger.cs" Line="5" Column="1" />
       <File FileName="Assets/Scripts/UnityAdsExample.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/TargetObj.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/EnemyMove.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/EnemyGenerator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GatyaManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FantasyBackground.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/GatyaManager.cs" Line="25" Column="3" />
+      <File FileName="Assets/Scripts/FantasyBackground.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MainUIManager.cs" Line="46" Column="24" />
+      <File FileName="Assets/Scripts/PresentBox.cs" Line="15" Column="56" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
