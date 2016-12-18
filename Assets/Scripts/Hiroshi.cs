@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class Hiroshi : MonoBehaviour {
 	float count = 0;
@@ -20,6 +21,7 @@ public class Hiroshi : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
+		sceneName = SceneManager.GetActiveScene ().name;
 		if (sceneName == "Main") {
 			target = GameObject.Find ("TargetObj").transform;
 		}
