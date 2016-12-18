@@ -1,13 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Yoichiro.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Sord.cs">
     <Files>
-      <File FileName="Assets/Scripts/GatyaManager.cs" Line="54" Column="30" />
-      <File FileName="Assets/Scripts/Hiroshi.cs" Line="31" Column="18" />
-      <File FileName="Assets/Scripts/PartnerManager.cs" Line="66" Column="3" />
-      <File FileName="Assets/Scripts/PlayerAnimator.cs" Line="27" Column="3" />
-      <File FileName="Assets/Scripts/SingletonMonoBehaviour.cs" Line="15" Column="1" />
-      <File FileName="Assets/Scripts/Yoichiro.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/Sord.cs" Line="13" Column="82" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
