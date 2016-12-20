@@ -10,10 +10,10 @@ public class BuyStatus : MonoBehaviour {
 //	}
 	public int swordPrice;
 	public int speedPrice;
-	void Start()
+	void Update()
 	{
 		//剣の値段
-	    swordPrice = ParameterManager.Instance.sordLength * 10;
+		swordPrice = ParameterManager.Instance.sordLength * 10;
 		//スピードの値段
 		speedPrice = ParameterManager.Instance.speed * 10;
 	}

@@ -9,7 +9,7 @@ public class Tomoaki : MonoBehaviour {
 
 	public Animator animator;
 
-	float speed = 0.01f;
+	float speed = 0.3f;
 
 	public GameObject bomb;
 

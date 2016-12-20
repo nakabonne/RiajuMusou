@@ -61,7 +61,7 @@ public class GatyaManager : MonoBehaviour {
 		house.transform.DOPunchScale (new Vector3 (2f, 2f, 2f), 3f, 3, 0);
 		Invoke ("Tanjou",2.0f);
 		//経験値を減らす
-		ExperienceManager.Instance.experience -= 1000;
+		ExperienceManager.Instance.experience -= 10000;
 		ExperienceManager.Instance.Save ();
 		//ランダムに選出されたパートナーを生成
 		partner = (GameObject)Instantiate (PartnerManager.Instance.RandomPartner (randomNum),new Vector3 (0,0,-5.0f),Quaternion.identity);

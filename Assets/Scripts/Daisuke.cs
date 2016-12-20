@@ -9,7 +9,7 @@ public class Daisuke : MonoBehaviour {
 
 	public Animator animator;
 
-	float speed = 0.1f;
+	float speed = 0.5f;
 
 	public GameObject explosion;
 

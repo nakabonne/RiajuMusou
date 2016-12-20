@@ -77,14 +77,6 @@
      <Compile Include="Assets\ComboPack\FantasySkin\Scripts\TiltWindow.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
-     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\AddPKFxFXComponent.cs" />
-     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\BounceDie.cs" />
-     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\CamZoom.cs" />
-     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\FPSCam.cs" />
-     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\PointClickSpawn.cs" />
-     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\RomanCandle.cs" />
-     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\RootyTootyPointNShooty.cs" />
-     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\TimedSuicide.cs" />
      <Compile Include="Assets\FireExplosionVFX\Scripts\FxSplash.cs" />
      <Compile Include="Assets\FireExplosionVFX\Scripts\LaunchEffect.cs" />
      <Compile Include="Assets\MasterCube\Script\MasterCube.cs" />
@@ -196,10 +188,11 @@
      <Compile Include="Assets\Scripts\YoichiroBullet.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\MasterCube\README.txt" />
-     <None Include="Assets\DiscoveryPack_Demo\_README_FIRST.txt" />
      <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
+     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
      <None Include="Assets\BasicBeamShot\sh\Add_UVScroll_sh.shader" />
      <None Include="Assets\PopcornFX\README.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
      <None Include="Assets\BasicBeamShot\HowToUse_JP.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
@@ -211,6 +204,7 @@
      <None Include="Assets\PopcornFX\Resources\PKFxDistQuickDirtyBlurEffect.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\NendAd\Plugins\iOS\NADView_readme.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
      <None Include="Assets\BasicBeamShot\sh\AddColor_sh.shader" />
      <None Include="Assets\PopcornFX\Resources\PKFxDepthCopyToColor.shader" />
      <None Include="Assets\PopcornFX\Resources\PKFxDistortionEffect.shader" />
@@ -243,6 +237,15 @@
  </Reference>
  <Reference Include="DOTween">
  <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
  </Reference>
  <Reference Include="PKFx-Helper">
  <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFx-Helper.dll</HintPath>

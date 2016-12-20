@@ -24,9 +24,12 @@ public class PartnerChange : MonoBehaviour {
 
 	public GameObject youichiroButton;
 	public Text youichiroCountLabel;
+
+	public Text choosingPartnerLabel;
 	// Use this for initialization
 	void Start () {
 		DisplayPartner ();
+		choosingPartnerName = PartnerManager.Instance.currentPartner.name;
 	}
 	//どのパートナーボタンを表示するか決定
 	void DisplayPartner()
@@ -54,6 +57,7 @@ public class PartnerChange : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		CountDisplay ();
+		ChoosingPartnerDisplay ();
 	}
 	//パートナーカウントを表示する
 	void CountDisplay()
@@ -64,6 +68,10 @@ public class PartnerChange : MonoBehaviour {
 		daisukeCountLabel.text = "× " + PartnerManager.Instance.daisukeCount.ToString ();
 		tomoakiCountLabel.text = "× " + PartnerManager.Instance.tomoakiCount.ToString ();
 		youichiroCountLabel.text = "× " + PartnerManager.Instance.youichiroCount.ToString ();
+	}
+	void ChoosingPartnerDisplay()
+	{
+		choosingPartnerLabel.text = choosingPartnerName;
 	}
 	//パートナーを選択
 	public void Choose(string partnerName)

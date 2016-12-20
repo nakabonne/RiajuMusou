@@ -35,7 +35,7 @@ public class ExperienceManager : SingletonMonoBehaviour<ExperienceManager> {
 	//経験値を追加
 	public void Add()
 	{
-		experience += 100;
+		experience += 10;
 	}
 
 	public bool isReward;

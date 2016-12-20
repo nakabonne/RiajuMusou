@@ -93,10 +93,11 @@
      <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\MasterCube\README.txt" />
-     <None Include="Assets\DiscoveryPack_Demo\_README_FIRST.txt" />
      <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
+     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
      <None Include="Assets\BasicBeamShot\sh\Add_UVScroll_sh.shader" />
      <None Include="Assets\PopcornFX\README.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
      <None Include="Assets\BasicBeamShot\HowToUse_JP.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
@@ -108,6 +109,7 @@
      <None Include="Assets\PopcornFX\Resources\PKFxDistQuickDirtyBlurEffect.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\NendAd\Plugins\iOS\NADView_readme.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
      <None Include="Assets\BasicBeamShot\sh\AddColor_sh.shader" />
      <None Include="Assets\PopcornFX\Resources\PKFxDepthCopyToColor.shader" />
      <None Include="Assets\PopcornFX\Resources\PKFxDistortionEffect.shader" />
@@ -140,6 +142,15 @@
  </Reference>
  <Reference Include="DOTween">
  <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
  </Reference>
  <Reference Include="PKFx-Helper">
  <HintPath>/Users/NakaoRyo/Desktop/UnityProject/RiajuMusou/Assets/PopcornFX/Scripts/PKFx-Helper.dll</HintPath>
