@@ -186,6 +186,9 @@
      <Compile Include="Assets\Scripts\UnityAdsExample.cs" />
      <Compile Include="Assets\Scripts\Yoichiro.cs" />
      <Compile Include="Assets\Scripts\YoichiroBullet.cs" />
+     <Compile Include="Assets\_DLNK\DLNK Assets\Zombie Cartoon\Scene\Source\Scripts\Animations.cs" />
+     <Compile Include="Assets\_DLNK\DLNK Assets\Zombie Cartoon\Scene\Source\Scripts\MorphUI.cs" />
+     <Compile Include="Assets\_DLNK\DLNK Assets\Zombie Cartoon\Scene\Source\Scripts\UI.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\MasterCube\README.txt" />
      <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
@@ -193,6 +196,7 @@
      <None Include="Assets\BasicBeamShot\sh\Add_UVScroll_sh.shader" />
      <None Include="Assets\PopcornFX\README.txt" />
      <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\_DLNK\Generic Resources\Shaders\Mobile\CharacterMobileOutline.shader" />
      <None Include="Assets\BasicBeamShot\HowToUse_JP.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
@@ -203,6 +207,7 @@
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\PopcornFX\Resources\PKFxDistQuickDirtyBlurEffect.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\_DLNK\Generic Resources\Shaders\Mobile\BumpedOutline.shader" />
      <None Include="Assets\NendAd\Plugins\iOS\NADView_readme.txt" />
      <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
      <None Include="Assets\BasicBeamShot\sh\AddColor_sh.shader" />
@@ -211,6 +216,7 @@
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\MasterCube\license.txt" />
      <None Include="Assets\BasicBeamShot\HowToUse_EN.txt" />
+     <None Include="Assets\_DLNK\Generic Resources\Shaders\Mobile\CharacterMobile.shader" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
@@ -228,9 +234,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
