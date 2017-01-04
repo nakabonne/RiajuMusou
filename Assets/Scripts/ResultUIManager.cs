@@ -43,6 +43,8 @@ public class ResultUIManager : MonoBehaviour {
 		//動画を表示するか決定
 		movieRandomShowTiming = AdvertiseManger.Instance.MovieShowTiming ();
 
+		Debug.Log (movieRandomShowTiming);
+
 		ExperienceManager.Instance.isReward = false;
 		buystatus = buyStatusObj.GetComponent<BuyStatus> ();
 	}
